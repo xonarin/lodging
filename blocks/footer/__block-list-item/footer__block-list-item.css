@@ -1,0 +1,14 @@
+.footer__block-list-item {
+  margin: 0;
+  padding: 12px 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'TT Firs Neue', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #3b3748;
+}

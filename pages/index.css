@@ -1,3 +1,14 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
 @import url('../blocks/container/container.css');
+
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__content/footer__content.css');
+@import url('../blocks/footer/__block/foooter__block.css');
+@import url('../blocks/footer/__block-title/footer__block-title.css');
+@import url('../blocks/footer/__block-list/footer__block-list.css');
+@import url('../blocks/footer/__block-list-item/footer__block-list-item.css');
+@import url('../blocks/footer/__block-list-social/footer__block-list-item_social.css');
+@import url('../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css');
+@import url('../blocks/footer/__link/footer__link.css');
+@import url('../blocks/footer/__link/_mail/footer__link_mail.css');

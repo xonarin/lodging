@@ -1,12 +1,18 @@
 .landing__button {
   width: 197px;
   height: 48px;
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
   align-self: flex-end;
   padding: 0;
   margin: 0;
-  background: url(../../../images/landing-button.png);
-  color: transparent;
+  background: #7100ff;
+  color: #fcfaf7;
   border: none;
+  border-radius: 26px;
   cursor: pointer;
   transition: opacity 0.2s linear;
 }

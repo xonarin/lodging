@@ -1,3 +1,10 @@
-@import url('../vendor/normalize.css');
-@import url('../vendor/fonts/fonts.css');
-@import url('../blocks/container/container.css');
+@import url("../vendor/normalize.css");
+@import url("../vendor/fonts/fonts.css");
+@import url("../blocks/container/container.css");
+@import url(../blocks/landing/landing.css);
+@import url(../blocks/landing/__button/landing__button.css);
+@import url(../blocks/landing/__list-description/landing__list-description.css);
+@import url(../blocks/landing/__list-item/landing__list-item.css);
+@import url(../blocks/landing/__list-title/landing__list-title.css);
+@import url(../blocks/landing/__list/landing__list.css);
+@import url(../blocks/landing/__title/landing__title.css);

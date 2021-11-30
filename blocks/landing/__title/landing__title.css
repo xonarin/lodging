@@ -1,0 +1,10 @@
+.landing__title {
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  color: #3b3748;
+  line-height: 52px;
+  margin: 0;
+  margin-block-end: 45px;
+}

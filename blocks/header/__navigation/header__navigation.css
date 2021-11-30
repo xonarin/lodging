@@ -1,6 +1,5 @@
 .header__navigation {
   display: flex;
-  justify-content: space-between;
   align-self: center;
-  width: 75%;
+  width: 500px;
 }

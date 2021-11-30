@@ -1,0 +1,7 @@
+.header__list-item {
+  position: relative;
+}
+
+.header__list-item:hover .header__list-submenu {
+  display: block;
+}

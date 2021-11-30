@@ -11,27 +11,38 @@
     <header class="header">
       <div class="header__content">
         <div class="header__logo"></div>
-        <nav class="header__navigation">
-          <a href="#" class="header__link"
-            ><img
-              alt="локация"
-              src="./images/header/header-location.svg"
-              class="header__link-icon"
-            />Санкт-Петербург</a
-          >
-          <ul class="header__list">
-            <li><a class="header__link" href="#">куда пойти</a></li>
-            <li><a class="header__link" href="#">стать участником</a></li>
-            <li><a class="header__link" href="#">о фестивале</a></li>
-          </ul>
+        <div class="header__links">
+          <nav class="header__navigation-town">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#" class="header__link"
+                  ><img
+                    class="header__link-icon"
+                    alt="локация"
+                    src="./images/header/header-location.svg"
+                  />Санкт-Петербург</a
+                >
+                <ul class="header__list-submenu">
+                  <li><a class="header__link" href="#">Москва</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li><a class="header__link" href="#">куда пойти</a></li>
+              <li><a class="header__link" href="#">стать участником</a></li>
+              <li><a class="header__link" href="#">о фестивале</a></li>
+            </ul>
+          </nav>
           <a class="header__link" href="#"
             ><img
+              class="header__link-icon"
               alt="сердце"
               src="./images/header/header-heart.svg"
-              class="header__link-icon"
             />хочу пойти</a
           >
-        </nav>
+        </div>
         <button class="header__button" name="header">поддержать</button>
       </div>
     </header>

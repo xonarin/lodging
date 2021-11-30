@@ -1,0 +1,8 @@
+.header__list-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

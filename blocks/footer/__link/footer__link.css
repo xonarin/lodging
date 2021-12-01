@@ -1,0 +1,13 @@
+.footer__link {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #3B3748;
+  transition: opacity 0.2s linear;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}

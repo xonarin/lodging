@@ -1,0 +1,17 @@
+.footer__block {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 427px;
+}
+
+.footer__block:first-of-type {
+  width: 310px;
+  margin: 0 40px 0 40px;
+}
+
+.footer__block:last-of-type {
+  width: 310px;
+  margin: 0 0 0 40px;
+}

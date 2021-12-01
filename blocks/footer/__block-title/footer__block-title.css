@@ -1,0 +1,11 @@
+.footer__block-title {
+  font-family: 'TT Firs Neue', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  text-transform: lowercase;
+  color: #3B3748;
+  margin: 0 0 20px 0;
+}

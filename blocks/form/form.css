@@ -1,0 +1,9 @@
+.form {
+  display: grid;
+  grid-template-areas:
+    "steps steps steps "
+    "title inputs inputs"
+    "title inputs inputs"
+    "title inputs inputs"
+    "btn btn btn";
+}

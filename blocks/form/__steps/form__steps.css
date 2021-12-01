@@ -1,0 +1,12 @@
+.form__steps {
+  margin: 0;
+
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  padding-inline-start: 240px;
+  padding-block-end: 12px;
+  grid-area: steps;
+}

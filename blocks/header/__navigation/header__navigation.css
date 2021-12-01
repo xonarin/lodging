@@ -1,5 +1,5 @@
 .header__navigation {
   display: flex;
   align-self: center;
-  max-width: 500px;
+  width: 500px;
 }

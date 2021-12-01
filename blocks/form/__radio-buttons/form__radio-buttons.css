@@ -1,8 +1,9 @@
 .form__radio-buttons {
   border: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  margin-inline-end: 70px;
-  margin-block-start: -12px;
+  max-width: 531px;
+  margin-block-start: 28px;
   grid-area: inputs;
 }

@@ -15,3 +15,4 @@
 @import url(../blocks/form/__button/_type/form__button_type_back.css);
 @import url(../blocks/form/__button/_type/form__button_type_next.css);
 @import url(../blocks/form/__buttons-wrap/form__buttons-wrap.css);
+@import url(../blocks/form/__button/_active/form__button_active.css);

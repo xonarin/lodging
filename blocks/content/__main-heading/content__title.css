@@ -1,0 +1,9 @@
+.content__title {
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 96px;
+  letter-spacing: -0.02em;
+  color: #3B3748;
+  margin: 40px 0;
+}

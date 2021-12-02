@@ -1,6 +1,7 @@
 .header__button {
   padding: 0;
-  width: 153px;
+  width: 100%;
+  max-width: 153px;
   height: 48px;
   border: none;
   background-color: #7100ff;

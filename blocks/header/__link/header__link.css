@@ -5,6 +5,8 @@
   line-height: 24px;
   color: #000;
   display: flex;
+  margin: 0 33px 0 11px;
+  align-self: center;
   transition: opacity 0.2s linear;
 }
 

@@ -1,0 +1,21 @@
+.landing__list-item {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: 500;
+  color: #3b3748;
+  min-height: 75px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ebe9ed;
+}
+
+.landing__list-item::before {
+  content: counter(myCounter);
+  counter-increment: myCounter;
+  display: inline-block;
+  min-width: 20px;
+}

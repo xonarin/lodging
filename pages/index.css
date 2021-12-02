@@ -7,7 +7,7 @@
 @import url("../blocks/form/__information/form__information.css");
 @import url("../blocks/form/__field-container/__field-container.css");
 @import url("../blocks/form/__field/form__field.css");
-@import url("../blocks/form/__field/_bottom-shadow/form__field_bottom-shadow.css");
+@import url("../blocks/form/__line/form__line.css");
 @import url("../blocks/form/__label/form__label.css");
 @import url("../blocks/form/__label-title/form__label-title.css");
 @import url("../blocks/form/__label/_type/form__label_type_radio.css");

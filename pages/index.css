@@ -4,7 +4,7 @@
 @import url("../blocks/section-form/section-form.css");
 @import url("../blocks/section-form/_name/section-form_name_category.css");
 @import url("../blocks/form/form.css");
-@import url("../blocks/form/__radio-buttons/form__radio-buttons.css");
+@import url("../blocks/form/__field/form__field.css");
 @import url("../blocks/form/__label-radio/form__label-radio.css");
 @import url("../blocks/form/__radio-button/form__radio-button.css");
 @import url("../blocks/form/__mark/form__mark.css");

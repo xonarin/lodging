@@ -16,6 +16,7 @@
 @import url("../blocks/form/__mark/form__mark.css");
 @import url("../blocks/form/__visual-input/form__visual-input.css");
 @import url("../blocks/form/__select/form__select.css");
+@import url("../blocks/form/__select-option/form__select-option.css");
 @import url("../blocks/form/__input-text/form__input-text.css");
 @import url("../blocks/form/__input-tel/form__input-tel.css");
 @import url("../blocks/form/__textarea/form__textarea.css");

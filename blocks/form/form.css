@@ -1,7 +1,7 @@
 .form {
   display: grid;
   grid-template-areas:
-    "steps inputs "
+    "steps steps "
     "title inputs "
     "title inputs "
     "title inputs "

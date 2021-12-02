@@ -20,6 +20,7 @@
 .form__radio-button:checked + .form__visual-input {
   background-color: #7100ff;
   color: white;
+  border: none;
 }
 
 .form__visual-input:hover {

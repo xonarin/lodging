@@ -1,0 +1,11 @@
+.form__label-title {
+  display: block;
+  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 24px;
+  color: #96949E;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  margin-block-end: 8px;
+}

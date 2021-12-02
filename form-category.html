@@ -54,7 +54,7 @@
                 <a class="header__link" href="#">куда пойти</a>
               </li>
               <li>
-                <a class="header__link" href="#">стать участником</a>
+                <a class="header__link" href="./index.html">стать участником</a>
               </li>
               <li>
                 <a class="header__link" href="#">о фестивале</a>
@@ -78,62 +78,74 @@
         <section class="section-form section-form_name_category">
           <form name="form" class="form">
             <p class="form__steps">шаг 1 из 4</p>
-            <h2 class="form__title">выберите категорию</h2>
-            <fieldset class="form__radio-buttons">
-              <label class="form__label-radio">
-                <input
-                  type="radio"
-                  class="form__radio-button"
-                  name="category"
-                  checked
-                />
-                <span class="form__visual-input"> кафе/бар/ресторан </span>
-                <span class="form__mark"></span>
-              </label>
-              <label class="form__label-radio">
-                <input
-                  type="radio"
-                  class="form__radio-button"
-                  name="category"
-                />
-                <span class="form__visual-input"> мастер-класс/лекция </span>
-                <span class="form__mark"></span>
-              </label>
-              <label class="form__label-radio">
-                <input
-                  type="radio"
-                  class="form__radio-button"
-                  name="category"
-                />
-                <span class="form__visual-input"> посиделки/вечеринка </span>
-                <span class="form__mark"></span>
-              </label>
-              <label class="form__label-radio">
-                <input
-                  type="radio"
-                  class="form__radio-button"
-                  name="category"
-                />
-                <span class="form__visual-input"> другое </span>
-                <span class="form__mark"></span>
-              </label>
-              <div class="form__buttons-wrap">
-                <button
-                  type="button"
-                  class="form__button form__button_type_back"
-                >
-                  отмена
-                </button>
-                <button
-                  type="submit"
-                  class="
-                    form__button form__button_type_next form__button_active
-                  "
-                >
-                  далее
-                </button>
-              </div>
-            </fieldset>
+            <div class="form__information">
+              <h2 class="form__title">выберите категорию</h2>
+            </div>
+
+            <div class="form__field-container">
+              <fieldset class="form__field">
+                <label class="form__label form__label_type_radio">
+                  <input
+                    type="radio"
+                    class="form__radio-button"
+                    name="category"
+                    value="cafe"
+                    checked
+                  />
+                  <span class="form__visual-input"> кафе/бар/ресторан </span>
+                  <span class="form__mark"></span>
+                </label>
+                <label class="form__label form__label_type_radio">
+                  <input
+                    type="radio"
+                    class="form__radio-button"
+                    name="category"
+                    value="master"
+                  />
+                  <span class="form__visual-input"> мастер-класс/лекция </span>
+                  <span class="form__mark"></span>
+                </label>
+                <label class="form__label form__label_type_radio">
+                  <input
+                    type="radio"
+                    class="form__radio-button"
+                    name="category"
+                    value="party"
+                  />
+                  <span class="form__visual-input"> посиделки/вечеринка </span>
+                  <span class="form__mark"></span>
+                </label>
+                <label class="form__label form__label_type_radio">
+                  <input
+                    type="radio"
+                    class="form__radio-button"
+                    name="category"
+                    value="other"
+                  />
+                  <span class="form__visual-input"> другое </span>
+                  <span class="form__mark"></span>
+                </label>
+              </fieldset>
+
+              <fieldset class="form__field">
+                <div class="form__buttons-wrap">
+                  <button
+                    type="button"
+                    class="form__button form__button_type_back"
+                  >
+                    отмена
+                  </button>
+                  <button
+                    type="submit"
+                    class="
+                      form__button form__button_type_next form__button_active
+                    "
+                  >
+                    далее
+                  </button>
+                </div>
+              </fieldset>
+            </div>
           </form>
         </section>
       </div>

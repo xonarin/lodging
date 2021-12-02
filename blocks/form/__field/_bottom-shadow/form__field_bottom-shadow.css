@@ -1,0 +1,5 @@
+.form__field_bottom-shadow {
+  padding-block-end: 23px;
+  margin-block-end: 28px;
+  box-shadow: inset 0px -1px 0px #EBE9ED;
+}

@@ -4,7 +4,7 @@
 @import url("../blocks/section-form/section-form.css");
 @import url("../blocks/section-form/_name/section-form_name_category.css");
 @import url("../blocks/form/form.css");
-@import url("../blocks/form/__radio-buttons/form__radio-buttons.css");
+@import url("../blocks/form/__field/form__field.css");
 @import url("../blocks/form/__label-radio/form__label-radio.css");
 @import url("../blocks/form/__radio-button/form__radio-button.css");
 @import url("../blocks/form/__mark/form__mark.css");
@@ -17,6 +17,7 @@
 @import url("../blocks/form/__button/_type/form__button_type_next.css");
 @import url("../blocks/form/__buttons-wrap/form__buttons-wrap.css");
 @import url("../blocks/form/__button/_active/form__button_active.css");
+@import url("../blocks/form/__label-radio/_place/form__label-radio_place_other.css");
 @import url("../blocks/block-centering/block-centering.css");
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__links/header__links.css");

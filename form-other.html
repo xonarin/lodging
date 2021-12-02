@@ -73,89 +73,180 @@
       </div>
     </header>
     <main class="content">
-      <div class="content__container"> <h1 class="content__title">стать участником</h1>
-      <section class="section-form section-form_name_other ">
-      <form name="form" class="form">
-        <p class="form__steps">шаг 2 из 4</p>
-        <h2 class="form__title">Заполните форму</h2>
-        <fieldset class="form__radio-buttons">
-          <label class="form__label-radio">
-            <input type="radio" class="form__radio-button" name="category" checked/>
-            <span class="form__visual-input"> другое </span>
-            <span class="form__mark"></span>
-          </label>
-          <label class="form__label-inputs">
+      <div class="content__container">
+        <h1 class="content__title">стать участником</h1>
+        <section class="section-form section-form_name_other">
+          <form name="form" class="form">
+            <p class="form__steps">шаг 2 из 4</p>
+            <h2 class="form__title">Заполните форму</h2>
+            <fieldset class="form__field">
+              <label class="form__label-radio form__label-radio_place_other">
+                <input
+                  type="radio"
+                  class="form__radio-button"
+                  name="category"
+                  checked
+                />
+                <span class="form__visual-input"> другое </span>
+                <span class="form__mark"></span>
+              </label>
+              <label class="form__label-inputs">
+                город
+                <select
+                  type="select"
+                  class="form__select"
+                  name="other-select"
+                  required
+                >
+                  <option value="" class="" disabled selected>
+                    Выберите из списка
+                  </option>
+                  <option class="" value="spb">Санкт-Петербург</option>
+                  <option class="" value="moscow">Москва</option>
+                  <option class="" value="nizniy">Нижний-Новгород</option>
+                  <option class="" value="ecaterinburg">Екатеринбург</option>
+                </select>
+              </label>
+              <label class="form__label-inputs"
+                >название мероприятия
+                <input
+                  type="text"
+                  class="form__input-text"
+                  name="other"
+                  required
+                />
+              </label>
+              <label class="form__label-inputs"
+                >дата проведения
+                <input
+                  type="date"
+                  class="form__input-text"
+                  name="other"
+                  required
+                />
+              </label>
+              <label class="form__label-inputs"
+                >контактное лицо
+                <input
+                  type="text"
+                  class="form__input-text"
+                  name="other"
+                  required
+                />
+              </label>
+              <label class="form__label-inputs"
+                >номер телефона для связи с организатором
+                <input
+                  type="tel"
+                  class="form__input-text"
+                  name="other"
+                  required
+                />
+              </label>
 
-            <input type="text" class="form__input-text" name="other" />
-
-          </label>
-          <label class="form__label-inputs">
-
-            <input type="text" class="form__input-text" name="other" />
-
-          </label>
-          <label class="form__label-inputs">
-
-            <input type="text" class="form__input-text" name="other" />
-
-          </label>
-          <label class="form__label-inputs">
-
-            <input type="text" class="form__input-text" name="other" />
-
-          </label>
-          <label class="form__label-inputs">
-
-            <input type="text" class="form__input-text" name="other" />
-
-          </label>
-
-
-          <div class="form__buttons-wrap">
-            <button type="button" class="form__button form__button_type_back">
-              отмена
-            </button>
-            <button
-              type="submit"
-              class="form__button form__button_type_next form__button_active"
-            >
-              далее
-            </button>
-          </div>
-        </fieldset>
-      </form>
-    </section>
+              <div class="form__buttons-wrap">
+                <button
+                  type="button"
+                  class="form__button form__button_type_back"
+                >
+                  отмена
+                </button>
+                <button
+                  type="submit"
+                  class="
+                    form__button form__button_type_next form__button_active
+                  "
+                >
+                  далее
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
       </div>
-
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="footer__content">
-        <img src="./images/footer-illustration.svg" alt="Гедонизмфест">
+        <img src="./images/footer-illustration.svg" alt="Гедонизмфест" />
         <section class="footer__block">
           <h3 class="footer__block-title">организатор:</h3>
           <ul class="footer__block-list">
-            <li class="footer__block-list-item"><a class="footer__link" href="https://homeless.ru/" target="_blank">Ночлежка<img class="footer__block-list-item-icon" src="./images/icon-open.svg" alt="Перейти"></a></li>
-            <li class="footer__block-list-item"><a class="footer__link footer__link_mail" href="mailto:info@hedonismfest.ru">info@hedonismfest.ru</a></li>
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link"
+                href="https://homeless.ru/"
+                target="_blank"
+                >Ночлежка<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link footer__link_mail"
+                href="mailto:info@hedonismfest.ru"
+                >info@hedonismfest.ru</a
+              >
+            </li>
           </ul>
         </section>
         <section class="footer__block">
           <h3 class="footer__block-title">сделано с любовью:</h3>
           <ul class="footer__block-list">
-            <li class="footer__block-list-item"><a class="footer__link" href="https://fastsol.digital/" target="_blank">Fastsol Digital<img class="footer__block-list-item-icon" src="./images/icon-open.svg" alt="Перейти"></a></li>
-            <li class="footer__block-list-item"><a class="footer__link" href="https://shishki.co/" target="_blank">shishki.collective<img class="footer__block-list-item-icon" src="./images/icon-open.svg" alt="Перейти"></a></li>
-            <li class="footer__block-list-item"><a class="footer__link" href="https://practicum.yandex.ru/" target="_blank">студентами Яндекс.Практикума<img class="footer__block-list-item-icon" src="./images/icon-open.svg" alt="Перейти"></a></li>
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link"
+                href="https://fastsol.digital/"
+                target="_blank"
+                >Fastsol Digital<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+            <li class="footer__block-list-item">
+              <a class="footer__link" href="https://shishki.co/" target="_blank"
+                >shishki.collective<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link"
+                href="https://practicum.yandex.ru/"
+                target="_blank"
+                >студентами Яндекс.Практикума<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
           </ul>
         </section>
         <section class="footer__block">
           <h3 class="footer__block-title">мы в соцсетях:</h3>
           <ul class="footer__block-list">
-            <li class="footer__block-list-item_social"><a class="footer__link" href="#" target="_blank"><img src="./images/icon-facebook.svg" alt="Facebook"></a></li><li class="footer__block-list-item_social"><a class="footer__link" href="#" target="_blank"><img src="./images/icon-instagram.svg" alt="Instagram"></a></li>
-            <li class="footer__block-list-item_social"><a class="footer__link" href="#" target="_blank"><img src="./images/icon-vk.svg" alt="VK"></a></li>
+            <li class="footer__block-list-item_social">
+              <a class="footer__link" href="#" target="_blank"
+                ><img src="./images/icon-facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li class="footer__block-list-item_social">
+              <a class="footer__link" href="#" target="_blank"
+                ><img src="./images/icon-instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li class="footer__block-list-item_social">
+              <a class="footer__link" href="#" target="_blank"
+                ><img src="./images/icon-vk.svg" alt="VK"
+              /></a>
+            </li>
           </ul>
         </section>
       </div>
     </footer>
-  </body>
-</html>
   </body>
 </html>

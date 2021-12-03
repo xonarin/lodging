@@ -54,7 +54,7 @@
                 <a class="header__link" href="#">куда пойти</a>
               </li>
               <li>
-                <a class="header__link" href="./index.html">стать участником</a>
+                <a class="header__link" href="#">стать участником</a>
               </li>
               <li>
                 <a class="header__link" href="#">о фестивале</a>
@@ -75,15 +75,26 @@
     <main class="content">
       <div class="content__container">
         <h1 class="content__title">стать участником</h1>
-        <section class="section-form section-form_name_category">
+        <section class="section-form">
           <form name="form" class="form">
-            <p class="form__steps">шаг 1 из 4</p>
+            <p class="form__steps">шаг 2 из 4</p>
             <div class="form__information">
-              <h2 class="form__title">выберите категорию</h2>
+              <h2 class="form__title form__title_place_form-other">
+                заполните форму
+              </h2>
+              <p class="form__paragraph form__paragraph_place_form-other">
+                Организуйте свою посиделку, вечеринку или концерт.
+              </p>
+              <p class="form__paragraph form__paragraph_place_form-other">
+                Пригласите друзей и тех, кто захочет помочь Ночлежке.
+              </p>
+              <p class="form__paragraph form__paragraph_place_form-other">
+                Установите пожертвование, например кусочек пирога за любую
+                комфортную сумму
+              </p>
             </div>
-
             <div class="form__field-container">
-              <fieldset class="form__field">
+              <fieldset class="form__field form__field_type_line">
                 <label class="form__label form__label_type_radio">
                   <input
                     type="radio"
@@ -92,48 +103,85 @@
                     value="cafe"
                     checked
                   />
-                  <span class="form__visual-input"> кафе/бар/ресторан </span>
-                  <span class="form__mark"></span>
-                </label>
-                <label class="form__label form__label_type_radio">
-                  <input
-                    type="radio"
-                    class="form__radio-button"
-                    name="category"
-                    value="master"
-                  />
-                  <span class="form__visual-input"> мастер-класс/лекция </span>
-                  <span class="form__mark"></span>
-                </label>
-                <label class="form__label form__label_type_radio">
-                  <input
-                    type="radio"
-                    class="form__radio-button"
-                    name="category"
-                    value="party"
-                  />
-                  <span class="form__visual-input"> посиделки/вечеринка </span>
-                  <span class="form__mark"></span>
-                </label>
-                <label class="form__label form__label_type_radio">
-                  <input
-                    type="radio"
-                    class="form__radio-button"
-                    name="category"
-                    value="other"
-                  />
                   <span class="form__visual-input"> другое </span>
                   <span class="form__mark"></span>
                 </label>
               </fieldset>
-
               <fieldset class="form__field">
-                <div class="form__buttons-wrap">
+                <label class="form__label form__label_type_input">
+                  <span class="form__label-title">город</span>
+                  <select
+                    type="select"
+                    class="form__select"
+                    name="other-select"
+                    required
+                  >
+                    <option value="" class="form__select_type_disabled" hidden>
+                      выберите из списка
+                    </option>
+                    <option class="form__select-option" value="spb">
+                      Санкт-Петербург
+                    </option>
+                    <option class="form__select-option" value="moscow">
+                      Москва
+                    </option>
+                  </select>
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">название мероприятия</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="other"
+                    placeholder="введите название"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">дата проведения</span>
+                  <input
+                    type="text"
+                    class="form__input-date"
+                    name="other"
+                    min="2021-01-01"
+                    placeholder="укажите дату в формате дд.мм.гггг"
+                    onfocus="(this.type = 'date')"
+                    aria-label="Дата"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">контактное лицо</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="other"
+                    placeholder="введите ФИО"
+                    required
+                  />
+                </label>
+                <label class="form__label"
+                  ><span class="form__label-title"
+                    >номер телефона для связи с организатором</span
+                  >
+                  <input
+                    type="tel"
+                    class="form__input-tel"
+                    name="other"
+                    value="+7("
+                    required
+                  />
+                </label>
+              </fieldset>
+              <fieldset class="form__field">
+                <div
+                  class="form__buttons-wrap form__buttons-wrap_place_form-other"
+                >
                   <button
                     type="button"
                     class="form__button form__button_type_back"
                   >
-                    отмена
+                    назад
                   </button>
                   <button
                     type="submit"

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Гедонизмфест</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <a href="#" class="header__logo-link">
+          <img
+            src="./images/logo/logo.svg"
+            alt="Главная"
+            class="header__logo"
+          />
+        </a>
+        <div class="header__links">
+          <nav class="header__navigation-town">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a href="#" class="header__link">
+                  <img
+                    class="header__link-icon"
+                    alt="локация"
+                    src="./images/header/header-location.svg"
+                  />
+                  Санкт-Петербург
+                </a>
+                <ul class="header__list-submenu">
+                  <li>
+                    <a class="header__link header__link_type_submenu" href="#"
+                      >Москва</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link header__link_type_submenu" href="#"
+                      >Нижний-Новгород</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__link header__link_type_submenu" href="#"
+                      >Екатеринбург</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__navigation">
+            <ul class="header__list">
+              <li>
+                <a class="header__link" href="#">куда пойти</a>
+              </li>
+              <li>
+                <a class="header__link" href="./index.html">стать участником</a>
+              </li>
+              <li>
+                <a class="header__link" href="#">о фестивале</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__link" href="#"
+            ><img
+              class="header__link-icon"
+              alt="сердце"
+              src="./images/header/header-heart.svg"
+            />хочу пойти</a
+          >
+        </div>
+        <button class="header__button" name="header">поддержать</button>
+      </div>
+    </header>
+    <main class="content">
+      <div class="content__container">
+        <h1 class="content__title">стать участником</h1>
+        <section class="section-form">
+          <form name="form" class="form">
+            <p class="form__steps">шаг 3 из 4</p>
+
+            <div class="form__information">
+              <h2 class="form__title">укажите контакты и часы работы</h2>
+              <p class="form__paragraph">
+                Эти данные появятся в описании карточки вашего мероприятия в
+                нашем каталоге событий
+              </p>
+            </div>
+
+            <div class="form__field-container">
+              <fieldset class="form__field form__field_place_other-2">
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">время проведения</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="institution-time"
+                    placeholder="например: 18:00-22:00"
+                    aria-label="время проведения"
+                    onfocus="(this.type = 'time')"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">адрес проведения</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="institution-address"
+                    placeholder="каждый адрес с новой строки"
+                    aria-label="адрес проведения"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title"
+                    >номер телефона для бронирования</span
+                  >
+                  <input
+                    type="tel"
+                    class="form__input-tel"
+                    name="institution-phone"
+                    aria-label="номер телефона для бронирования"
+                    value="+7("
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">стоимость участия</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="other"
+                    placeholder="укажите стоимость в рублях"
+                    aria-label="Стоимость участия"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">ссылка на сайт</span>
+                  <input
+                    type="url"
+                    class="form__input-text"
+                    name="institution-url"
+                    value="https://"
+                    aria-label="ссылки на сайт"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">ссылки на соцсети</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="institution-url"
+                    placeholder="каждую ссылку с новой строки"
+                    aria-label="Ссылки на соцсети"
+                    required
+                  />
+                </label>
+                <label class="form__label">
+                  <span class="form__label-title">описание</span>
+                  <textarea
+                    class="form__textarea form__textarea_height_small"
+                    name="menudescription"
+                    placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено "
+                    aria-label="Описание мероприятия"
+                  ></textarea>
+                </label>
+              </fieldset>
+
+              <fieldset class="form__field">
+                <div class="form__buttons-wrap">
+                  <button
+                    type="button"
+                    class="form__button form__button_type_back"
+                  >
+                    отмена
+                  </button>
+                  <button
+                    type="submit"
+                    class="
+                      form__button form__button_type_next form__button_active
+                    "
+                  >
+                    далее
+                  </button>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <img src="./images/footer-illustration.svg" alt="Гедонизмфест" />
+        <section class="footer__block">
+          <h3 class="footer__block-title">организатор:</h3>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link"
+                href="https://homeless.ru/"
+                target="_blank"
+                >Ночлежка<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link footer__link_mail"
+                href="mailto:info@hedonismfest.ru"
+                >info@hedonismfest.ru</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="footer__block">
+          <h3 class="footer__block-title">сделано с любовью:</h3>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link"
+                href="https://fastsol.digital/"
+                target="_blank"
+                >Fastsol Digital<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+            <li class="footer__block-list-item">
+              <a class="footer__link" href="https://shishki.co/" target="_blank"
+                >shishki.collective<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+            <li class="footer__block-list-item">
+              <a
+                class="footer__link"
+                href="https://practicum.yandex.ru/"
+                target="_blank"
+                >студентами Яндекс.Практикума<img
+                  class="footer__block-list-item-icon"
+                  src="./images/icon-open.svg"
+                  alt="Перейти"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer__block">
+          <h3 class="footer__block-title">мы в соцсетях:</h3>
+          <ul class="footer__block-list">
+            <li class="footer__block-list-item_social">
+              <a class="footer__link" href="#" target="_blank"
+                ><img src="./images/icon-facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li class="footer__block-list-item_social">
+              <a class="footer__link" href="#" target="_blank"
+                ><img src="./images/icon-instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li class="footer__block-list-item_social">
+              <a class="footer__link" href="#" target="_blank"
+                ><img src="./images/icon-vk.svg" alt="VK"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

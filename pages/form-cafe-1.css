@@ -18,18 +18,40 @@
 @import url("../blocks/content/content.css");
 @import url("../blocks/content/__container/content__container.css");
 @import url("../blocks/content/__title/content__title.css");
+@import url("../blocks/section-form/section-form.css");
 
-@import url("../blocks/landing/landing.css");
-@import url("../blocks/block-centering/block-centering.css");
+@import url("../blocks/form/form.css");
+@import url("../blocks/form/__steps/form__steps.css");
+@import url("../blocks/form/__information/form__information.css");
+@import url("../blocks/form/__title/form__title.css");
+@import url("../blocks/form/__paragraph/form__paragraph.css");
+@import url("../blocks/form/__list/form__list.css");
 
-@import url("../blocks/landing/__title/landing__title.css");
-@import url("../blocks/landing/__list/landing__list.css");
+@import url("../blocks/form/__field-container/__field-container.css");
+@import url("../blocks/form/__field/form__field.css");
+@import url("../blocks/form/__field/_type/form__field_type_line.css");
 
-@import url("../blocks/landing/__list-item/landing__list-item.css");
-@import url("../blocks/landing/__list-title/landing__list-title.css");
-@import url("../blocks/landing/__list-description/landing__list-description.css");
+@import url("../blocks/form/__label/form__label.css");
+@import url("../blocks/form/__label/_type/form__label_type_input.css");
+@import url("../blocks/form/__label-title/form__label-title.css");
+@import url("../blocks/form/__label/_type/form__label_type_radio.css");
 
-@import url("../blocks/landing/__button/landing__button.css");
+@import url("../blocks/form/__visual-input/form__visual-input.css");
+@import url("../blocks/form/__mark/form__mark.css");
+@import url("../blocks/form/__radio-button/form__radio-button.css");
+
+@import url("../blocks/form/__select/form__select.css");
+@import url("../blocks/form/__select-option/form__select-option.css");
+
+@import url("../blocks/form/__input-tel/form__input-tel.css");
+@import url("../blocks/form/__input-text/form__input-text.css");
+@import url("../blocks/form/__textarea/form__textarea.css");
+
+@import url("../blocks/form/__buttons-wrap/form__buttons-wrap.css");
+@import url("../blocks/form/__button/form__button.css");
+@import url("../blocks/form/__button/_type/form__button_type_next.css");
+@import url("../blocks/form/__button/_type/form__button_type_back.css");
+@import url("../blocks/form/__button/_active/form__button_active.css");
 
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__content/footer__content.css");

@@ -1,0 +1,8 @@
+.form__label-radio-title {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 24px;
+  margin-block-end: 12px;
+  font-family: "TT Firs Neue", Arial, sans-serif;
+}

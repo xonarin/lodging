@@ -8,7 +8,7 @@
 @import url("../blocks/form/__label-radio/form__label-radio.css");
 @import url("../blocks/form/__information/form__information.css");
 @import url("../blocks/form/__field-container/__field-container.css");
-@import url("../blocks/form/__field/form__field.css");
+@import url("../blocks/form/__field/_place/form__field_place_other-2.css");
 @import url("../blocks/form/__field/_type/form__field_type_line.css");
 @import url("../blocks/form/__label/form__label.css");
 @import url("../blocks/form/__label-title/form__label-title.css");
@@ -23,6 +23,7 @@
 @import url("../blocks/form/__input-tel/form__input-tel.css");
 @import url("../blocks/form/__input-date/form__input-date.css");
 @import url("../blocks/form/__textarea/form__textarea.css");
+@import url("../blocks/form/__textarea/_height/form__textarea_height_small.css");
 @import url("../blocks/form/__steps/form__steps.css");
 @import url("../blocks/form/__title/form__title.css");
 @import url("../blocks/form/__title/_place/form__title_place_form-other.css");

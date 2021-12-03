@@ -1,0 +1,7 @@
+.form__textarea_height_small{
+  min-height: 96px;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+ 
+  padding-inline-end: 21px;
+}

@@ -14,6 +14,7 @@ const categories = {
 function nextPage(elements, obj) {
   elements.forEach((element) => {
     if (element.checked) {
+      element.checked = false;
       window.location.href = obj[element.value];
     }
   });
@@ -31,5 +32,10 @@ form.addEventListener("submit", (event) => {
   nextPage(selectCategories, categories);
 });
 backButton.addEventListener("click", () => {
+  selectCategories.forEach((category) => {
+    if (category.checked) {
+      category.checked = false;
+    }
+  });
   window.location.href = "./index.html";
 });

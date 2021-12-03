@@ -1,5 +1,8 @@
 .form__label_type_party {
   display: flex;
-  justify-content: baseline;
   padding-block-start: 16px;
+}
+
+.form__label_type_party:last-of-type {
+  padding-block-start: 18px;
 }

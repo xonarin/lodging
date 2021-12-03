@@ -53,7 +53,7 @@
 @import url("../blocks/header/__content/header__content.css");
 @import url("../blocks/content/content.css");
 @import url("../blocks/content/__container/content__container.css");
-@import url("../blocks/content/__main-heading/content__title.css");
+@import url("../blocks/content/__title/content__title.css");
 @import url("../blocks/landing/landing.css");
 @import url("../blocks/landing/__button/landing__button.css");
 @import url("../blocks/landing/__list-description/landing__list-description.css");

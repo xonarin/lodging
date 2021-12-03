@@ -54,7 +54,7 @@
                 <a class="header__link" href="#">куда пойти</a>
               </li>
               <li>
-                <a class="header__link" href="#">стать участником</a>
+                <a class="header__link" href="./index.html">стать участником</a>
               </li>
               <li>
                 <a class="header__link" href="#">о фестивале</a>
@@ -77,109 +77,105 @@
         <h1 class="content__title">стать участником</h1>
         <section class="section-form">
           <form name="form" class="form">
-            <p class="form__steps">шаг 2 из 4</p>
+            <p class="form__steps">шаг 3 из 4</p>
+
             <div class="form__information">
-              <h2 class="form__title">заполните форму</h2>
+              <h2 class="form__title">укажите контакты и часы работы</h2>
               <p class="form__paragraph">
-                Организуйте свою посиделку, вечеринку или концерт.
-              </p>
-              <p class="form__paragraph">
-                Пригласите друзей и тех, кто захочет помочь Ночлежке.
-              </p>
-              <p class="form__paragraph">
-                Установите пожертвование, например кусочек пирога за любую
-                комфортную сумму
+                Эти данные появятся в описании карточки вашего мероприятия в
+                нашем каталоге событий
               </p>
             </div>
+
             <div class="form__field-container">
-              <fieldset class="form__field form__field_type_line">
-                <label class="form__label form__label_type_radio">
-                  <input
-                    type="radio"
-                    class="form__radio-button"
-                    name="category"
-                    value="cafe"
-                    checked
-                  />
-                  <span class="form__visual-input"> другое </span>
-                  <span class="form__mark"></span>
-                </label>
-              </fieldset>
-              <fieldset class="form__field">
-                <label class="form__label form__label_type_input">
-                  <span class="form__label-title">город</span>
-                  <select
-                    type="select"
-                    class="form__select"
-                    name="other-select"
-                    required
-                  >
-                    <option value="" class="form__select_type_disabled" hidden>
-                      выберите из списка
-                    </option>
-                    <option class="form__select-option" value="spb">
-                      Санкт-Петербург
-                    </option>
-                    <option class="form__select-option" value="moscow">
-                      Москва
-                    </option>
-                  </select>
-                </label>
+              <fieldset class="form__field form__field_place_other-2">
                 <label class="form__label form__label_type_input"
-                  ><span class="form__label-title">название мероприятия</span>
+                  ><span class="form__label-title">время проведения</span>
                   <input
                     type="text"
                     class="form__input-text"
-                    name="other"
-                    placeholder="введите название"
+                    name="institution-time"
+                    placeholder="например: 18:00-22:00"
+                    aria-label="время проведения"
+                    onfocus="(this.type = 'time')"
                     required
                   />
                 </label>
                 <label class="form__label form__label_type_input"
-                  ><span class="form__label-title">дата проведения</span>
-                  <input
-                    type="text"
-                    class="form__input-date"
-                    name="other"
-                    min="2021-01-01"
-                    placeholder="укажите дату в формате дд.мм.гггг"
-                    onfocus="(this.type = 'date')"
-                    aria-label="Дата"
-                    required
-                  />
-                </label>
-                <label class="form__label form__label_type_input"
-                  ><span class="form__label-title">контактное лицо</span>
+                  ><span class="form__label-title">адрес проведения</span>
                   <input
                     type="text"
                     class="form__input-text"
-                    name="other"
-                    placeholder="введите ФИО"
+                    name="institution-address"
+                    placeholder="каждый адрес с новой строки"
+                    aria-label="адрес проведения"
                     required
                   />
                 </label>
-                <label class="form__label"
+                <label class="form__label form__label_type_input"
                   ><span class="form__label-title"
-                    >номер телефона для связи с организатором</span
+                    >номер телефона для бронирования</span
                   >
                   <input
                     type="tel"
                     class="form__input-tel"
-                    name="other"
+                    name="institution-phone"
+                    aria-label="номер телефона для бронирования"
                     value="+7("
                     required
                   />
                 </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">стоимость участия</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="other"
+                    placeholder="укажите стоимость в рублях"
+                    aria-label="Стоимость участия"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">ссылка на сайт</span>
+                  <input
+                    type="url"
+                    class="form__input-text"
+                    name="institution-url"
+                    value="https://"
+                    aria-label="ссылки на сайт"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">ссылки на соцсети</span>
+                  <input
+                    type="text"
+                    class="form__input-text"
+                    name="institution-url"
+                    placeholder="каждую ссылку с новой строки"
+                    aria-label="Ссылки на соцсети"
+                    required
+                  />
+                </label>
+                <label class="form__label">
+                  <span class="form__label-title">описание</span>
+                  <textarea
+                    class="form__textarea form__textarea_height_small"
+                    name="menudescription"
+                    placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено "
+                    aria-label="Описание мероприятия"
+                  ></textarea>
+                </label>
               </fieldset>
+
               <fieldset class="form__field">
-                <div
-                  class="form__buttons-wrap form__buttons-wrap_place_form-other"
-                >
+                <div class="form__buttons-wrap">
                   <button
                     type="button"
                     class="form__button form__button_type_back"
                   >
-                    назад
+                    отмена
                   </button>
                   <button
                     type="submit"
@@ -196,6 +192,7 @@
         </section>
       </div>
     </main>
+
     <footer class="footer">
       <div class="footer__content">
         <img src="./images/footer-illustration.svg" alt="Гедонизмфест" />

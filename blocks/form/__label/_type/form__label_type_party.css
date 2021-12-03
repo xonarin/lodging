@@ -1,0 +1,5 @@
+.form__label_type_party {
+  display: flex;
+  justify-content: baseline;
+  padding-block-start: 16px;
+}

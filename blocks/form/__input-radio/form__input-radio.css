@@ -1,0 +1,21 @@
+.form__input-radio {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-inline-end: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("../../../images/radio.svg");
+  background-size: cover;
+  transition: opacity 0.2s linear;
+}
+
+.form__input-radio:checked {
+  background-image: url("../../../images/radio-checked.svg");
+}
+
+.form__input-radio:hover {
+  opacity: 0.7;
+}

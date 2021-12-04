@@ -46,35 +46,35 @@
 <input type="text" class="form__input" name="place-name" placeholder="введите название" id="place-name" required>
 
 <label class="form__label" for="contact-person">контактное лицо</label>
-<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person">
+<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person" required>
 
 <label class="form__label" for="tel">телефон для связи с организатором</label>
-<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(">
+<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(" required>
 
 <label class="form__label" for="description">описание</label>
 <textarea class="form__input form__input_type_textarea" id="description" name="main-text"
-          placeholder="Укажите, что из меню будет принимать участие в акции"></textarea>
+          placeholder="Укажите, что из меню будет принимать участие в акции" required></textarea>
 
 <!-- кафе/бар/ресторан шаг 3 из 4 -->
 
 <label class="form__label" for="work-hours">часы работы заведения</label>
-<input type="text" class="form__input" name="work-hours" placeholder="например: 10:00-13:00б 13:00-19:00" id="work-hours">
+<input type="text" class="form__input" name="work-hours" placeholder="например: 10:00-13:00б 13:00-19:00" id="work-hours" required>
 
 <label class="form__label" for="address">адрес заведения</label>
-<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address">
+<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address" required>
 
 <label class="form__label" for="place-tel">номер телефона заведения</label>
-<input type="text" class="form__input" name="place-tel" placeholder="+7(" id="place-tel" value="+7(">
+<input type="text" class="form__input" name="place-tel" placeholder="+7(" id="place-tel" value="+7(" required>
 
 <label class="form__label" for="website">ссылка на сайт</label>
-<input type="text" class="form__input" name="website" placeholder="https://" value="https://" id="website">
+<input type="text" class="form__input" name="website" placeholder="https://" value="https://" id="website" required>
 
 <label class="form__label" for="social-links">ссылки на соцсети</label>
-<input type="text" class="form__input" name="social-links" placeholder="каждую ссылку с новой строки" id="social-links">
+<input type="text" class="form__input" name="social-links" placeholder="каждую ссылку с новой строки" id="social-links" required>
 
 <label class="form__label" for="invitation">описание</label>
 <textarea class="form__input form__input_type_textarea" id="invitation" name="invitation"
-          placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"></textarea>
+          placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон" required></textarea>
 
 <!-- мастер-класс/лекция шаг 2 из 4 -->
 
@@ -92,56 +92,56 @@
 <div class="form__line"></div>
 
 <label class="form__label" for="city">город</label>
-<select class="form__input form__input_type_select" name="city" id="city">
+<select class="form__input form__input_type_select" name="city" id="city" required>
   <option value="">выберите из списка</option>
   <option value="Saint-Petersburg">Санкт-Петербург</option>
   <option value="Moscow">Москва</option>
 </select>
 
 <label class="form__label" for="event-name">название мероприятия</label>
-<input type="text" class="form__input" name="event-name" placeholder="введите название" id="event-name">
+<input type="text" class="form__input" name="event-name" placeholder="введите название" id="event-name" required>
 
 <label class="form__label" for="date">дата проведения</label>
 <input type="text" class="form__input" name="date" placeholder="введите дату в формате дд.мм.гггг" id="date"
-       onfocusin="(this.type='date')" onfocusout="(this.type='text')">
+       onfocusin="(this.type='date')" onfocusout="(this.type='text')" required>
 
 <label class="form__label" for="contact-person">контактное лицо</label>
-<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person">
+<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person" required>
 
 <label class="form__label" for="tel">номер телефона для связи с организатором</label>
-<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(">
+<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(" required>
 
 <!-- мастер-класс/лекция шаг 3 из 4 -->
 
 <label class="form__label" for="work-hours">время проведения</label>
-<input type="text" class="form__input" name="work-hours" placeholder="например: 18:00-22:00" id="work-hours">
+<input type="text" class="form__input" name="work-hours" placeholder="например: 18:00-22:00" id="work-hours" required>
 
 <label class="form__label" for="address">адрес проведения</label>
-<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address">
+<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address" required>
 
 <label class="form__label" for="booking-tel">номер телефона для бронирования</label>
-<input type="text" class="form__input" name="booking-tel" placeholder="+7(" id="booking-tel" value="+7(">
+<input type="text" class="form__input" name="booking-tel" placeholder="+7(" id="booking-tel" value="+7(" required>
 
 <label class="form__label" for="price">стоимость участия</label>
-<input type="text" class="form__input" name="price" placeholder="укажите стоимость в рублях" id="price">
+<input type="text" class="form__input" name="price" placeholder="укажите стоимость в рублях" id="price" required>
 
 <label class="form__label" for="invitation">описание</label>
 <textarea class="form__input form__input_type_textarea" id="invitation" name="invitation"
-          placeholder="Напишите небольшой анонс вашего мастер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"></textarea>
+          placeholder="Напишите небольшой анонс вашего мастер-класса или лекции. Чем мероприятие будет полезно, чему посвящено" required></textarea>
 
 <!-- посиделки/вечеринка шаг 2 из 4-->
 
 <div class="form__line"></div>
 
 <label class="form__label" for="city">город</label>
-<select class="form__input form__input_type_select" name="city" id="city">
+<select class="form__input form__input_type_select" name="city" id="city" required>
   <option value="">выберите из списка</option>
   <option value="Saint-Petersburg">Санкт-Петербург</option>
   <option value="Moscow">Москва</option>
 </select>
 
 <label class="form__label" for="event-name">название мероприятия</label>
-<input type="text" class="form__input" name="event-name" placeholder="введите название" id="event-name">
+<input type="text" class="form__input" name="event-name" placeholder="введите название" id="event-name" required>
 
 <div class="form__line"></div>
 
@@ -161,81 +161,90 @@
 
 <label class="form__label" for="date">дата проведения</label>
 <input type="text" class="form__input" name="date" placeholder="укажите дату в формате дд.мм.гггг" id="date"
-       onfocusin="(this.type='date')" onfocusout="(this.type='text')">
+       onfocusin="(this.type='date')" onfocusout="(this.type='text')" required>
 
 <label class="form__label" for="contact-person">контактное лицо</label>
-<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person">
+<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person" required>
 
 <label class="form__label" for="tel">телефон для связи с организатором</label>
-<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(">
+<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(" required>
 
 <!-- посиделки/вечеринка шаг 3 из 4-->
 
 <label class="form__label" for="work-hours">время проведения</label>
-<input type="text" class="form__input" name="work-hours" placeholder="например: 18:00-22:00" id="work-hours">
+<input type="text" class="form__input" name="work-hours" placeholder="например: 18:00-22:00" id="work-hours" required>
 
 <label class="form__label" for="address">адрес проведения</label>
-<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address">
+<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address" required>
 
 <label class="form__label" for="booking-tel">номер телефона для бронирования</label>
-<input type="text" class="form__input" name="booking-tel" placeholder="+7(" id="booking-tel" value="+7(">
+<input type="text" class="form__input" name="booking-tel" placeholder="+7(" id="booking-tel" value="+7(" required>
 
 <label class="form__label" for="price">стоимость участия</label>
-<input type="text" class="form__input" name="price" placeholder="укажите стоимость в рублях" id="price">
+<input type="text" class="form__input" name="price" placeholder="укажите стоимость в рублях" id="price" required>
 
 <label class="form__label" for="website">ссылка на сайт</label>
-<input type="text" class="form__input" name="website" placeholder="https://" value="https://" id="website">
+<input type="text" class="form__input" name="website" placeholder="https://" value="https://" id="website" required>
 
 <label class="form__label" for="social-links">ссылки на соцсети</label>
-<input type="text" class="form__input" name="social-links" placeholder="каждую ссылку с новой строки" id="social-links">
+<input type="text" class="form__input" name="social-links" placeholder="каждую ссылку с новой строки" id="social-links" required>
 
 <label class="form__label" for="invitation">описание</label>
 <textarea class="form__input form__input_type_textarea" id="invitation" name="invitation"
-          placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено"></textarea>
+          placeholder="Напишите небольшой анонс вашего мероприятия. Чем оно будет полезно/чему посвящено" required></textarea>
 
 <!-- другое шаг 2 из 4 -->
 
 <div class="form__line"></div>
 
 <label class="form__label" for="city">город</label>
-<select class="form__input form__input_type_select" name="city" id="city">
+<select class="form__input form__input_type_select" name="city" id="city" required>
   <option value="">выберите из списка</option>
   <option value="Saint-Petersburg">Санкт-Петербург</option>
   <option value="Moscow">Москва</option>
 </select>
 
 <label class="form__label" for="event-name">название мероприятия</label>
-<input type="text" class="form__input" name="event-name" placeholder="введите название" id="event-name">
+<input type="text" class="form__input" name="event-name" placeholder="введите название" id="event-name" required>
 
 <label class="form__label" for="date">дата проведения</label>
 <input type="text" class="form__input" name="date" placeholder="укажите дату в формате дд.мм.гггг" id="date"
-       onfocusin="(this.type='date')" onfocusout="(this.type='text')">
+       onfocusin="(this.type='date')" onfocusout="(this.type='text')" required>
 
 <label class="form__label" for="contact-person">контактное лицо</label>
-<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person">
+<input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person" required>
 
 <label class="form__label" for="tel">номер телефона для связи с организатором</label>
-<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(">
+<input type="text" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(" required>
 
 <!-- другое шаг 3 из 4 -->
 
 <label class="form__label" for="work-hours">время проведения</label>
-<input type="text" class="form__input" name="work-hours" placeholder="например: 18:00-22:00" id="work-hours">
+<input type="text" class="form__input" name="work-hours" placeholder="например: 18:00-22:00" id="work-hours" required>
 
 <label class="form__label" for="address">адрес проведения</label>
-<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address">
+<input type="text" class="form__input" name="address" placeholder="каждый адрес с новой строки" id="address" required>
 
 <label class="form__label" for="booking-tel">номер телефона для бронирования</label>
-<input type="text" class="form__input" name="booking-tel" placeholder="+7(" id="booking-tel" value="+7(">
+<input type="text" class="form__input" name="booking-tel" placeholder="+7(" id="booking-tel" value="+7(" required>
 
 <label class="form__label" for="price">стоимость участия</label>
-<input type="text" class="form__input" name="price" placeholder="укажите стоимость в рублях" id="price">
+<input type="text" class="form__input" name="price" placeholder="укажите стоимость в рублях" id="price" required>
 
 <label class="form__label" for="invitation">описание</label>
 <textarea class="form__input form__input_type_textarea" id="invitation" name="invitation"
-          placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"></textarea>
+          placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон" required></textarea>
 
 <button type="submit">Submit</button>
 </form>
+
+<template id="form__error">
+  <div class="form__error-container">
+    <img class="form__error-img" alt="Ошибка">
+    <span class="form__error-text"></span>
+  </div>
+</template>
+
+<script src="./scripts/form__error.js"></script>
 </body>
 </html>

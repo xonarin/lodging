@@ -1,19 +1,23 @@
 @import url("./vendor/normalize.css");
 @import url("./vendor/fonts/fonts.css");
 
-@import url("./blocks/form__label/form__label.css");
-@import url("./blocks/form__label/_type/form__label_type_radio.css");
-@import url("./blocks/form__label/_type/form__label_type_radio-with-text.css");
-@import url("./blocks/form__label/_type/form__label_type_radio-text.css");
-@import url("./blocks/form__label/_type/form__label_type_radio-custom.css");
+@import url("blocks/form/__label/form__label.css");
+@import url("blocks/form/__label/_type/form__label_type_radio.css");
+@import url("blocks/form/__label/_type/form__label_type_radio-with-text.css");
+@import url("blocks/form/__label/_type/form__label_type_radio-text.css");
+@import url("blocks/form/__label/_type/form__label_type_radio-custom.css");
 
-@import url("./blocks/form__input/form__input.css");
-@import url("./blocks/form__input/_type/form__input_type_select.css");
-@import url("./blocks/form__input/_type/form__input_type_textarea.css");
-@import url("./blocks/form__input/_type/form__input_type_radio.css");
-@import url("./blocks/form__input/_type/form__input_type_radio-custom.css");
+@import url("blocks/form/__input/form__input.css");
+@import url("blocks/form/__input/_type/form__input_type_select.css");
+@import url("blocks/form/__input/_type/form__input_type_textarea.css");
+@import url("blocks/form/__input/_type/form__input_type_radio.css");
+@import url("blocks/form/__input/_type/form__input_type_radio-custom.css");
 
-@import url("./blocks/form__line/form__line.css");
+@import url("blocks/form/__error-container/form__error-container.css");
+@import url("blocks/form/__error-text/form__error-text.css");
+@import url("blocks/form/__error-img/form__error-img.css");
+
+@import url("blocks/form/__line/form__line.css");
 
 
 

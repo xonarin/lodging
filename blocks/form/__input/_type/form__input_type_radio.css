@@ -7,13 +7,13 @@
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  background-image: url("../../../images/radio.svg");
+  background-image: url("../../../../images/radio.svg");
   background-size: cover;
   transition: opacity 0.2s linear;
 }
 
 .form__input_type_radio:checked {
-  background-image: url("../../../images/radio-checked.svg");
+  background-image: url("../../../../images/radio-checked.svg");
 }
 
 .form__input_type_radio:hover {

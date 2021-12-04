@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/form-other-2.css" />
+    <link rel="stylesheet" href="./pages/form-cafe-2.css" />
     <title>Гедонизмфест</title>
   </head>
   <body>
@@ -80,6 +80,7 @@
         <section class="section-form">
           <form name="form" class="form">
             <p class="form__steps">шаг 3 из 4</p>
+
             <div class="form__information">
               <h2 class="form__title">укажите контакты и часы работы</h2>
               <p class="form__paragraph">
@@ -87,52 +88,64 @@
                 нашем каталоге событий
               </p>
             </div>
+
             <div class="form__field-container">
               <fieldset class="form__field">
                 <label class="form__label form__label_type_input"
-                  ><span class="form__label-title">время проведения</span>
+                  ><span class="form__label-title">часы работы заведения</span>
                   <input
                     type="text"
                     class="form__input-text"
-                    name="other"
-                    placeholder="например: 18:00-22:00"
-                    aria-label="Время проведения"
+                    name="institution-time"
+                    placeholder="например: 10:00-13:00, 13:00-19:00"
+                    aria-label="часы работы заведения"
                     onfocus="(this.type = 'time')"
                     required
                   />
                 </label>
                 <label class="form__label form__label_type_input"
-                  ><span class="form__label-title">адрес проведения</span>
+                  ><span class="form__label-title">адрес заведения</span>
                   <input
                     type="text"
                     class="form__input-text"
-                    name="other"
+                    name="institution-address"
                     placeholder="каждый адрес с новой строки"
-                    aria-label="Адрес проведения"
+                    aria-label="адрес заведения"
                     required
                   />
                 </label>
                 <label class="form__label form__label_type_input"
                   ><span class="form__label-title"
-                    >номер телефона для бронирования</span
+                    >номер телефона заведения</span
                   >
                   <input
                     type="tel"
                     class="form__input-tel"
-                    name="other"
-                    aria-label="Телефон для бронирования"
+                    name="institution-phone"
+                    aria-label="номер телефона заведения"
                     value="+7("
                     required
                   />
                 </label>
                 <label class="form__label form__label_type_input"
-                  ><span class="form__label-title">стоимость участия</span>
+                  ><span class="form__label-title">ссылка на сайт</span>
+                  <input
+                    type="url"
+                    class="form__input-text"
+                    name="institution-url"
+                    value="https://"
+                    aria-label="ссылки на сайт"
+                    required
+                  />
+                </label>
+                <label class="form__label form__label_type_input"
+                  ><span class="form__label-title">ссылки на соцсети</span>
                   <input
                     type="text"
                     class="form__input-text"
-                    name="other"
-                    placeholder="укажите стоимость в рублях"
-                    aria-label="Стоимость участия"
+                    name="institution-url"
+                    placeholder="каждую ссылку с новой строки"
+                    aria-label="Ссылки на соцсети"
                     required
                   />
                 </label>
@@ -146,6 +159,7 @@
                   ></textarea>
                 </label>
               </fieldset>
+
               <fieldset class="form__field">
                 <div class="form__buttons-wrap">
                   <button
@@ -169,6 +183,7 @@
         </section>
       </div>
     </main>
+
     <footer class="footer">
       <div class="footer__content">
         <img src="./images/footer-illustration.svg" alt="Гедонизмфест" />

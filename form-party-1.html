@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./pages/form-party-1.css" />
     <title>Гедонизмфест</title>
   </head>
   <body>
@@ -54,7 +54,7 @@
                 <a class="header__link" href="#">куда пойти</a>
               </li>
               <li>
-                <a class="header__link" href="#">стать участником</a>
+                <a class="header__link" href="./index.html">стать участником</a>
               </li>
               <li>
                 <a class="header__link" href="#">о фестивале</a>
@@ -79,16 +79,16 @@
           <form name="form" class="form">
             <p class="form__steps">шаг 2 из 4</p>
             <div class="form__information">
-              <h2 class="form__title form__title_place_form-other">
+              <h2 class="form__title">
                 заполните форму
               </h2>
-              <p class="form__paragraph form__paragraph_place_form-other">
+              <p class="form__paragraph">
                 Организуйте свою посиделку, вечеринку или концерт.
               </p>
-              <p class="form__paragraph form__paragraph_place_form-other">
+              <p class="form__paragraph">
                 Пригласите друзей и тех, кто захочет помочь Ночлежке.
               </p>
-              <p class="form__paragraph form__paragraph_place_form-other">
+              <p class="form__paragraph">
                 Установите пожертвование, например кусочек пирога за любую
                 комфортную сумму
               </p>
@@ -116,7 +116,7 @@
                       name="other-select"
                       required
                     >
-                      <option value="" class="form__select_type_disabled" hidden>
+                      <option value="" hidden>
                         выберите из списка
                       </option>
                       <option class="form__select-option" value="spb">
@@ -127,7 +127,7 @@
                       </option>
                     </select>
                   </label>
-                  <label class="form__label form__label_type_input form__label_type_line-party"
+                  <label class="form__label"
                     ><span class="form__label-title">название мероприятия</span>
                     <input
                       type="text"
@@ -144,7 +144,7 @@
                           <span class="form__label-radio-title">открытое мероприятие</span>
                         </label>
                           <span class="form__label-title">адрес отобразим в карточке события</span>
-                      <label class="form__label form__label_type_party form__label_type_line-party">
+                      <label class="form__label form__label_type_party">
                         <input type="radio" class="form__input-radio" name="choice">
                         <span class="form__label-radio-title">закрытое мероприятие</span>
                     </label>

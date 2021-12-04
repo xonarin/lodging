@@ -2,18 +2,19 @@
 @import url("../vendor/fonts/fonts.css");
 
 @import url("../blocks/header/header.css");
-@import url("../blocks/header/__button/header__button.css");
-@import url("../blocks/header/__content/header__content.css");
-@import url("../blocks/header/__link-icon/header__link-icon.css");
-@import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/header/__links/header__links.css");
-@import url("../blocks/header/__list-item/header__list-item.css");
-@import url("../blocks/header/__list-submenu/header__list-submenu.css");
-@import url("../blocks/header/__list/header__list.css");
 @import url("../blocks/header/__logo/header__logo.css");
-@import url("../blocks/header/__navigation-town/header__navigation-town.css");
+@import url("../blocks/header/__logo-link/header__logo-link.css");
 @import url("../blocks/header/__navigation/header__navigation.css");
+@import url("../blocks/header/__list/header__list.css");
+@import url("../blocks/header/__link/header__link.css");
 @import url("../blocks/header/__link/_type/header__link_type_submenu.css");
+@import url("../blocks/header/__link-icon/header__link-icon.css");
+@import url("../blocks/header/__button/header__button.css");
+@import url("../blocks/header/__list-submenu/header__list-submenu.css");
+@import url("../blocks/header/__list-item/header__list-item.css");
+@import url("../blocks/header/__navigation-town/header__navigation-town.css");
+@import url("../blocks/header/__content/header__content.css");
 
 @import url("../blocks/content/content.css");
 @import url("../blocks/content/__container/content__container.css");
@@ -37,11 +38,7 @@
 @import url("../blocks/footer/__block-title/footer__block-title.css");
 @import url("../blocks/footer/__block-list/footer__block-list.css");
 @import url("../blocks/footer/__block-list-item/footer__block-list-item.css");
-<<<<<<< HEAD
 @import url("../blocks/footer/__block-list-item-social/footer__block-list-item-social.css");
-=======
->>>>>>> 222d84c97306b463d7cfdd775252f28e778c0e33
 @import url("../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css");
-@import url("../blocks/footer/__block-list-social/footer__block-list-item_social.css");
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__link/_mail/footer__link_mail.css");

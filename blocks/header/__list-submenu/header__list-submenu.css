@@ -1,10 +1,12 @@
 .header__list-submenu {
   width: 100%;
-  display: none;
   position: absolute;
   top: 100%;
   padding: 0 0 10px 35px;
   margin: 0;
   list-style: none;
   background-color: #ffd400;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s linear, visibility 0s;
 }

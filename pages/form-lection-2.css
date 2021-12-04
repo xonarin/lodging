@@ -53,6 +53,9 @@
 @import url("../blocks/form/__visual-input/form__visual-input.css");
 @import url("../blocks/form/__mark/form__mark.css");
 
+@import url("../blocks/form/__textarea/form__textarea.css");
+@import url("../blocks/form/__textarea/_height/form__textarea_height_small.css");
+
 @import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__button/_type/form__button_type_back.css");
 @import url("../blocks/form/__button/_type/form__button_type_next.css");

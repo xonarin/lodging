@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="./pages/form-lection.css" rel="stylesheet">
+  <link href="./pages/form-lection-2.css" rel="stylesheet">
   <title>Гедонизмфест</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
             <a class="header__link" href="#">куда пойти</a>
           </li>
           <li>
-            <a class="header__link" href="./index.html">стать участником</a>
+            <a class="header__link" href="#">стать участником</a>
           </li>
           <li>
             <a class="header__link" href="#">о фестивале</a>
@@ -59,7 +59,7 @@
       >хочу пойти</a
       >
     </div>
-    <button type="button" class="header__button" name="header">поддержать</button>
+    <button class="header__button" name="header">поддержать</button>
   </div>
 </header>
 <main class="content">
@@ -67,110 +67,88 @@
     <h1 class="content__title">стать участником</h1>
     <section class="section-form">
       <form class="form" name="form">
-        <p class="form__steps">шаг 2 из 4</p>
+        <p class="form__steps">шаг 3 из 4</p>
         <div class="form__information">
           <h2 class="form__title form__title_place_form-other">
-            заполните форму
+            укажите контакты и часы работы
           </h2>
           <p class="form__paragraph form__paragraph_place_form-other">
-            Определитесь с типом мероприятия — лекция, консультация или мастер-класс.
-          </p>
-          <p class="form__paragraph form__paragraph_place_form-other">
-            Когда люди удут покупать билеты, вам будут приходить уведомления на электронную почту
+            Эти данные появятся в описании карточки вашего мероприятия в нашем каталоге событий
           </p>
         </div>
         <div class="form__field-container">
-          <fieldset class="form__field form__field_type_line">
-            <label class="form__label form__label_type_radio">
-              <input checked class="form__radio-button" name="category" type="radio" value="lection">
-              <span class="form__visual-input">мастер-класс/лекция</span>
-              <span class="form__mark"></span>
-            </label>
-          </fieldset>
-          <fieldset class="form__field form__field_type_line form__field_type_party">
-            <label class="form__label form__label_type_party">
-              <input type="radio" class="form__input-radio" name="choice" checked>
-              <span class="form__label-radio-title">онлайн</span>
-            </label>
-            <label class="form__label form__label_type_party form__label_type_line-party">
-              <input type="radio" class="form__input-radio" name="choice">
-              <span class="form__label-radio-title">офлайн</span>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__field">
-            <label class="form__label form__label_type_input">
-              <span class="form__label-title">город</span>
-              <select
-                class="form__select"
-                name="other-select"
-                required
-                type="select"
-              >
-                <option class="form__select_type_disabled" hidden value="">
-                  выберите из списка
-                </option>
-                <option class="form__select-option" value="spb">
-                  Санкт-Петербург
-                </option>
-                <option class="form__select-option" value="moscow">
-                  Москва
-                </option>
-              </select>
-            </label>
+          <fieldset class="form__field form__field_place_other-2">
             <label class="form__label form__label_type_input"
-            ><span class="form__label-title">название мероприятия</span>
+            ><span class="form__label-title">время проведения</span>
               <input
+                type="text"
                 class="form__input-text"
                 name="other"
-                placeholder="введите название"
+                placeholder="например: 18:00-22:00"
+                aria-label="Время проведения"
+                onfocus="(this.type = 'time')"
                 required
-                type="text"
-              >
+              />
             </label>
             <label class="form__label form__label_type_input"
-            ><span class="form__label-title">дата проведения</span>
+            ><span class="form__label-title">адрес проведения</span>
               <input
-                aria-label="Дата"
-                class="form__input-date"
-                min="2021-01-01"
-                name="other"
-                onfocus="(this.type = 'date')"
-                placeholder="укажите дату в формате дд.мм.гггг"
-                required
                 type="text"
-              >
-            </label>
-            <label class="form__label form__label_type_input"
-            ><span class="form__label-title">контактное лицо</span>
-              <input
                 class="form__input-text"
                 name="other"
-                placeholder="введите ФИО"
+                placeholder="каждый адрес с новой строки"
+                aria-label="Адрес проведения"
                 required
-                type="text"
-              >
+              />
             </label>
-            <label class="form__label"
+            <label class="form__label form__label_type_input"
             ><span class="form__label-title"
-            >номер телефона для связи с организатором</span
+            >номер телефона для бронирования</span
             >
               <input
+                type="tel"
                 class="form__input-tel"
                 name="other"
-                required
-                type="tel"
+                aria-label="Телефон для бронирования"
                 value="+7("
-              >
+                required
+              />
+            </label>
+            <label class="form__label form__label_type_input"
+            ><span class="form__label-title">стоимость участия</span>
+              <input
+                type="text"
+                class="form__input-text"
+                name="other"
+                placeholder="укажите стоимость в рублях"
+                aria-label="Стоимость участия"
+                required
+              />
+            </label>
+            <label class="form__label">
+              <span class="form__label-title">описание</span>
+              <textarea
+                class="form__textarea form__textarea_height_small"
+                name="menudescription"
+                placeholder="Напишите небольшой анонс вашего мастер-класса или лекции. Чем мероприятие будет полезно, чему посвящено"
+                aria-label="Описание мероприятия"
+              ></textarea>
             </label>
           </fieldset>
           <fieldset class="form__field">
-            <div class="form__buttons-wrap form__buttons-wrap_place_form-other">
-              <button class="form__button form__button_type_back" type="button">
+            <div class="form__buttons-wrap">
+              <button
+                type="button"
+                class="form__button form__button_type_back"
+              >
                 назад
               </button>
               <button
-                class="form__button form__button_type_next form__button_active" type="submit">
+                type="submit"
+                class="
+                      form__button form__button_type_next form__button_active
+                    "
+              >
                 далее
               </button>
             </div>
@@ -230,14 +208,14 @@
             <img alt="Facebook" src="./images/icon-facebook.svg">
           </a>
         </li><li class="footer__block-list-item-social">
-          <a class="footer__link" href="#" target="_blank">
-            <img alt="Instagram" src="./images/icon-instagram.svg">
-          </a>
-        </li><li class="footer__block-list-item-social">
-          <a class="footer__link" href="#" target="_blank">
-            <img alt="VK" src="./images/icon-vk.svg">
-          </a>
-        </li>
+        <a class="footer__link" href="#" target="_blank">
+          <img alt="Instagram" src="./images/icon-instagram.svg">
+        </a>
+      </li><li class="footer__block-list-item-social">
+        <a class="footer__link" href="#" target="_blank">
+          <img alt="VK" src="./images/icon-vk.svg">
+        </a>
+      </li>
       </ul>
     </section>
   </div>

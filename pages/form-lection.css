@@ -4,6 +4,7 @@
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__links/header__links.css");
 @import url("../blocks/header/__logo/header__logo.css");
+@import url("../blocks/header/__logo-link/header__logo-link.css");
 @import url("../blocks/header/__navigation/header__navigation.css");
 @import url("../blocks/header/__list/header__list.css");
 @import url("../blocks/header/__link/header__link.css");
@@ -66,7 +67,7 @@
 @import url("../blocks/footer/__block-title/footer__block-title.css");
 @import url("../blocks/footer/__block-list/footer__block-list.css");
 @import url("../blocks/footer/__block-list-item/footer__block-list-item.css");
-@import url("../blocks/footer/__block-list-social/footer__block-list-item_social.css");
+@import url("../blocks/footer/__block-list-item-social/footer__block-list-item-social.css");
 @import url("../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css");
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__link/_mail/footer__link_mail.css");

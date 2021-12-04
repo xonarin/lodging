@@ -67,7 +67,7 @@
 @import url("../blocks/footer/__block-title/footer__block-title.css");
 @import url("../blocks/footer/__block-list/footer__block-list.css");
 @import url("../blocks/footer/__block-list-item/footer__block-list-item.css");
-@import url("../blocks/footer/__block-list-social/footer__block-list-item_social.css");
+@import url("../blocks/footer/__block-list-item-social/footer__block-list-item-social.css");
 @import url("../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css");
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__link/_mail/footer__link_mail.css");

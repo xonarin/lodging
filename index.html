@@ -7,8 +7,9 @@
 </head>
 <body>
 
-<!-- выбор категории -->
+<form>
 
+<!-- выбор категории -->
 
 <input class="form__input form__input_type_radio-custom" type="radio" name="category" id="cafe" value="cafe" checked>
 <label class="form__label form__label_type_radio-custom" for="cafe">
@@ -42,7 +43,7 @@
 </select>
 
 <label class="form__label" for="place-name">название заведения</label>
-<input type="text" class="form__input" name="place-name" placeholder="введите название" id="place-name">
+<input type="text" class="form__input" name="place-name" placeholder="введите название" id="place-name" required>
 
 <label class="form__label" for="contact-person">контактное лицо</label>
 <input type="text" class="form__input" name="contact-person" placeholder="введите ФИО" id="contact-person">
@@ -234,5 +235,7 @@
 <textarea class="form__input form__input_type_textarea" id="invitation" name="invitation"
           placeholder="Напишите небольшое приглашение своим посетителям. Людям нравятся простые обращения, дружественный тон"></textarea>
 
+<button type="submit">Submit</button>
+</form>
 </body>
 </html>

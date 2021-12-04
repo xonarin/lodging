@@ -27,3 +27,11 @@
   line-height: 24px;
   color: #96949E;
 }
+
+.form__input:focus {
+  outline-color: #7100ff;
+}
+
+.form__input:invalid {
+  outline-color: #f40934;
+}

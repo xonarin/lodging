@@ -129,6 +129,7 @@
                     aria-describedby="form__select-info"
                     placeholder="выберите из списка"
                     autocomplete="new-password"
+                    required
                   />
                   <span
                     id="form__select-info"
@@ -184,8 +185,18 @@
                   required
                 />
 
-                <label class="form__label" for="tel">номер телефона для связи с организатором</label>
-                <input type="tel" class="form__input" name="tel" placeholder="+7(" id="tel" value="+7(" required>
+                <label class="form__label" for="tel"
+                  >номер телефона для связи с организатором</label
+                >
+                <input
+                  type="tel"
+                  class="form__input"
+                  name="tel"
+                  placeholder="+7("
+                  id="tel"
+                  value="+7("
+                  required
+                />
               </fieldset>
               <fieldset class="form__field form__field_buttons">
                 <button

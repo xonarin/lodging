@@ -1,0 +1,23 @@
+.form__label_type_radio-custom {
+  background-color: #fff;
+  width: 100%;
+  max-width: 531px;
+  height: 48px;
+  border: 2px solid #96949E;
+  box-sizing: border-box;
+  border-radius: 24px;
+  padding: 12px 24px;
+  color: #3b3748;
+  margin: 0 0 12px 0;
+}
+
+.form__input_type_radio-custom:checked + .form__label_type_radio-custom {
+  background-color: #7100ff;
+  background-image: url("../../../../images/radio-custom-checked.svg");
+  background-repeat: no-repeat;
+  background-position: top 50% right 23.97px;
+  color: #fcfaf7;
+  border-color: #7100ff;
+}
+
+

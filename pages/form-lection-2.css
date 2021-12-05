@@ -30,39 +30,21 @@
 
 @import url("../blocks/form/__field/form__field.css");
 @import url("../blocks/form/__field-container/__field-container.css");
-@import url("../blocks/form/__field/_type/form__field_type_line.css");
+@import url("../blocks/form/__field-container/_no-padding/form__field-container_no-padding.css");
+@import url("../blocks/form/__field/_buttons/form__field_buttons.css");
 
 @import url("../blocks/form/__label/form__label.css");
-@import url("../blocks/form/__label/_type/form__label_type_radio.css");
-@import url("../blocks/form/__label/_type/form__label_type_input.css");
-@import url("../blocks/form/__label/_type/form__label_type_party.css");
-@import url("../blocks/form/__label/_type/form__label_type_line-party.css");
-@import url("../blocks/form/__label-title/form__label-title.css");
-@import url("../blocks/form/__label-radio-title/form__label-radio-title.css");
+@import url("../blocks/form/__label/_type/form__label_type_radio-custom.css");
 
-@import url("../blocks/form/__radio-button/form__radio-button.css");
-
-@import url("../blocks/form/__select/form__select.css");
-@import url("../blocks/form/__select-option/form__select-option.css");
-
-@import url("../blocks/form/__input-text/form__input-text.css");
-@import url("../blocks/form/__input-tel/form__input-tel.css");
-@import url("../blocks/form/__input-date/form__input-date.css");
-@import url("../blocks/form/__input-radio/form__input-radio.css");
-
-@import url("../blocks/form/__visual-input/form__visual-input.css");
-@import url("../blocks/form/__mark/form__mark.css");
-
-@import url("../blocks/form/__textarea/form__textarea.css");
-@import url("../blocks/form/__textarea/_height/form__textarea_height_small.css");
+@import url("../blocks/form/__input/form__input.css");
+@import url("../blocks/form/__input/_type/form__input_type_radio-custom.css");
+@import url("../blocks/form/__input/_type/form__input_type_select.css");
+@import url("../blocks/form/__input/_type/form__input_type_textarea-invitation.css");
 
 @import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__button/_type/form__button_type_back.css");
 @import url("../blocks/form/__button/_type/form__button_type_next.css");
 @import url("../blocks/form/__button/_active/form__button_active.css");
-
-@import url("../blocks/form/__buttons-wrap/form__buttons-wrap.css");
-@import url("../blocks/form/__buttons-wrap/_place/form__buttons-wrap_place_form-other.css");
 
 @import url("../blocks/footer/footer.css");
 @import url("../blocks/footer/__content/footer__content.css");

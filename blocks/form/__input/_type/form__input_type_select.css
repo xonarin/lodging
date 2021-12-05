@@ -1,18 +1,16 @@
 .form__input_type_select {
+  position: relative;
   background: url('../../../../images/select.svg') no-repeat right;
   background-position-x: calc(100% - 29px);
   appearance: none;
   cursor: pointer;
   background-color: #fff;
-  color: #96949E;
+  color: #3b3748;
   margin: 0;
 }
 
 
 .form__input_type_select:focus {
   outline: none;
-  border-color: #7100ff;
-  border-bottom-color: transparent;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border: unset;
 }

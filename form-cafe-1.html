@@ -107,21 +107,24 @@
               </fieldset>
 
               <fieldset class="form__field">
-                <label class="form__label form__label_type_input">
-                  <span class="form__label-title">город</span>
-                  <select name="city" class="form__select" required>
-                    <option value="" hidden>выберите из списка</option>
-                    <option class="form__select-option" value="value1">
-                      Значение 1
-                    </option>
-                    <option class="form__select-option" value="value2">
-                      Значение 2
-                    </option>
-                    <option class="form__select-option" value="value3">
-                      Значение 3
-                    </option>
-                  </select>
-                </label>
+
+                <label class="form__label" for="city">город</label>
+
+                  <div id="form__select-status" class="form__input_type_select-hidden" aria-live="polite"></div>
+
+                  <div class="form__select-container" id="form__select">
+                    <input type="text" id="city" class="form__input form__input_type_select" aria-describedby="form__select-info" placeholder="выберите из списка" autocomplete="off">
+
+
+                    <span id="form__select-info" class="form__input_type_select-hidden">Выберите город из списка нажимая на стрелки вниз, вверх на клавиатуре.</span>
+
+                    <ul class="form__select-list form__select-list_hidden" id="custom-select-list">
+                      <li class="form__select-item">Москва</li>
+                      <li class="form__select-item">Санкт-Петербург</li>
+                      <li class="form__select-item">Воронеж</li>
+                      <li class="form__select-item">Владикавказ</li>
+                    </ul>
+                  </div>
 
                 <label class="form__label form__label_type_input">
                   <span class="form__label-title">название заведения</span>
@@ -301,5 +304,6 @@
       </div>
     </footer>
     <script src="./scripts/form.js"></script>
+    <script src="./scripts/custom-select.js"></script>
   </body>
 </html>

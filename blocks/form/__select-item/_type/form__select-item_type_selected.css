@@ -1,0 +1,4 @@
+.form__select-item_type_selected, .form__select-item_type_selected:hover {
+  background: url('../../../../images/option-checked.svg') no-repeat right;
+  background-position-x: calc(100% - 24px);
+}

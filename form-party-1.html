@@ -94,11 +94,20 @@
                   <fieldset class="form__field">
 
                     <label class="form__label" for="city">город</label>
-                    <select class="form__input form__input_type_select" name="city" id="city" required>
-                      <option value="">выберите из списка</option>
-                      <option value="Saint-Petersburg">Санкт-Петербург</option>
-                      <option value="Moscow">Москва</option>
-                    </select>
+
+                    <div id="form__select-status" class="form__input_type_select-hidden" aria-live="polite"></div>
+
+                    <div class="form__select-container" id="form__select">
+                      <input type="text" id="city" class="form__input form__input_type_select" aria-describedby="form__select-info" placeholder="выберите из списка" autocomplete="new-password">
+                      <span id="form__select-info" class="form__input_type_select-hidden">Выберите город из списка нажимая на стрелки вниз, вверх на клавиатуре.</span>
+
+                      <ul class="form__select-list form__select-list_hidden" id="custom-select-list">
+                        <li class="form__select-item">Москва</li>
+                        <li class="form__select-item">Санкт-Петербург</li>
+                        <li class="form__select-item">Воронеж</li>
+                        <li class="form__select-item">Владикавказ</li>
+                      </ul>
+                    </div>
 
                     <label class="form__label" for="event-name">название мероприятия</label>
                     <input type="text" class="form__input form__input_type_special-margin" name="event-name" placeholder="введите название" id="event-name" required>
@@ -218,6 +227,7 @@
 </template>
 
 <script src="./scripts/form.js"></script>
+<script src="./scripts/custom-select.js"></script>
 <script src="./scripts/form__error.js"></script>
 </body>
 </html>

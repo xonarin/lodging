@@ -6,7 +6,7 @@ const backButton = document.querySelector(".form__button_type_back");
 const form = document.querySelector(".form");
 const categories = {
   cafe: "./form-cafe-1.html",
-  master: "./form-lection.html ",
+  lection: "./form-lection.html",
   party: "./form-party-1.html",
   other: "./form-other.html",
 };

@@ -41,6 +41,14 @@
 @import url("../blocks/form/__input/_type/form__input_type_select.css");
 @import url("../blocks/form/__input/_type/form__input_type_textarea.css");
 
+@import url("../blocks/form/__select-container/form__select-container.css");
+@import url("../blocks/form/__input/_type/form__input_type_select.css");
+@import url("../blocks/form/__input/_type/form__input_type_select-hidden.css");
+@import url("../blocks/form/__select-list/form__select-list.css");
+@import url("../blocks/form/__select-item/form__select-item.css");
+@import url("../blocks/form/__select-item/_type/form__select-item_type_selected.css");
+@import url("../blocks/form/__select-list/_hidden/form__select-list_hidden.css");
+
 @import url("../blocks/form/__line/form__line.css");
 
 @import url("../blocks/form/__button/form__button.css");

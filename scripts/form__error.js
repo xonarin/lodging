@@ -1,7 +1,7 @@
-const inputs = [...document.getElementsByTagName("input")];
+const inputs = document.querySelectorAll('input');
 const errorTemplate = document.querySelector('#form__error').content;
 
-inputs.forEach(input => {
+Array.from(inputs).forEach(input => {
 
 	input.addEventListener('invalid', function (event) {
 		event.preventDefault();

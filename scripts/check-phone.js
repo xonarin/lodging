@@ -1,4 +1,4 @@
-const phoneInput = document.querySelector("#tel");
+const phoneInput = document.querySelector("input[type=tel]");
 let errorContainer;
 
 const regExpPhone =

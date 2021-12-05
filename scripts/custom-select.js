@@ -1,62 +1,58 @@
-// SETUP
-// /////////////////////////////////
-// assign names to things we'll need to use more than once
 const csSelector = document.querySelector('#form__select') // the input, svg and ul as a group
-const csInput = csSelector.querySelector('input')
-const csList = csSelector.querySelector('ul')
-const csOptions = csList.querySelectorAll('li')
-const csIcons = csSelector.querySelectorAll('svg')
+const csInput = csSelector.querySelector('.form__input_type_select')
+const csList = csSelector.querySelector('.form__select-list')
+const csOptions = csList.querySelectorAll('.form__select-item')
 const csStatus = document.querySelector('#form__select-status')
 const aOptions = Array.from(csOptions)
 
-// when JS is loaded, set up our starting point
-// if JS fails to load, the custom select remains a plain text input
-// create and set start point for the state tracker
+// когда JS загружен, устанавливаем нашу отправную точку
+// если JS не загружается, пользовательский выбор остается вводом обычного текста
+// создаем и устанавливаем начальную точку для отслеживания состояния
 let csState = "initial"
-// inform assistive tech (screen readers) of the names & roles of the elements in our group
+// сообщаем вспомогательным технологиям (программам чтения с экрана) названия и роли элементов в нашей группе
 csSelector.setAttribute('role', 'combobox')
 csSelector.setAttribute('aria-haspopup', 'listbox')
-csSelector.setAttribute('aria-owns', 'custom-select-list') // container owns the list...
+csSelector.setAttribute('aria-owns', 'custom-select-list')
 csInput.setAttribute('aria-autocomplete', 'both')
-csInput.setAttribute('aria-controls', 'custom-select-list') // ...but the input controls it
+csInput.setAttribute('aria-controls', 'custom-select-list')
 csList.setAttribute('role', 'listbox')
 csOptions.forEach(function(option) {
 	option.setAttribute('role', 'option')
-	option.setAttribute('tabindex', "-1")  // make li elements keyboard focusable by script only
+	option.setAttribute('tabindex', "-1")  // делаем li-элементы доступными для клавиатуры только с помощью скрипта
 })
 
 
-// EVENTS
+// СОБЫТИЯ
 // /////////////////////////////////
 csSelector.addEventListener('click', function(e) {
 	const currentFocus = findFocus()
 	switch(csState) {
-		case 'initial' : // if state = initial, toggleOpen and set state to opened
+		case 'initial' : // если состояние = начальное, toggleOpen и установка состояния на открытое
 			toggleList('Open')
 			setState('opened')
 			break
 		case 'opened':
-			// if state = opened and focus on input, toggleShut and set state to initial
+			// если состояние = открыто и фокус на вводе, toggleShut и установка состояния на начальное
 			if (currentFocus === csInput) {
 				toggleList('Shut')
 				setState('initial')
 			} else if (currentFocus.tagName === 'LI') {
-				// if state = opened and focus on list, makeChoice, toggleShut and set state to closed
+				// если состояние = открыто и сфокусироваться на списке, makeChoice, toggleShut и установить состояние закрыто
 				makeChoice(currentFocus)
 				toggleList('Shut')
 				setState('closed')
 			}
 			break
 		case 'filtered':
-			// if state = filtered and focus on list, makeChoice and set state to closed
+			// если состояние = отфильтровано и сфокусироваться на списке, makeChoice и установит закрытое состояние
 			if (currentFocus.tagName === 'LI') {
 				makeChoice(currentFocus)
 				toggleList('Shut')
 				setState('closed')
-			} // if state = filtered and focus on input, do nothing (wait for next user input)
+			} // если состояние = отфильтровано и фокус на вводе, ничего не делать (ждать следующего ввода пользователя)
 
 			break
-		case 'closed': // if state = closed, toggleOpen and set state to filtered? or opened?
+		case 'closed': // если состояние = закрыто, переключитьОткрыть и установить состояние как отфильтрованное? или открылся?
 			toggleList('Open')
 			setState('filtered')
 			break
@@ -69,7 +65,7 @@ csSelector.addEventListener('keyup', function(e) {
 
 document.addEventListener('click', function(e) {
 	if (!e.target.closest('#form__select')) {
-		// click outside of the custom group
+		// клик за пределами кастомного селекта, закрываем кастомный селект
 		toggleList('Shut')
 		setState('initial')
 	}
@@ -100,14 +96,14 @@ Array.from(csOptions).forEach((item, index, array) => {
 })
 
 
-// FUNCTIONS
+// Функии
 // /////////////////////////////////
 
 function toggleList(whichWay) {
 	if (whichWay === 'Open') {
 		csList.classList.remove('form__select-list_hidden')
 		csSelector.setAttribute('aria-expanded', 'true')
-	} else { // === 'Shut'
+	} else { // === 'Закрываем'
 		csList.classList.add('form__select-list_hidden')
 		csSelector.setAttribute('aria-expanded', 'false')
 	}
@@ -119,20 +115,20 @@ function findFocus() {
 }
 
 function moveFocus(fromHere, toThere) {
-	// grab the currently showing options, which might have been filtered
+	// берем отображаемые в данный момент параметры, которые могли быть отфильтрованы
 	const aCurrentOptions = aOptions.filter(function(option) {
 		if (option.style.display === '') {
 			return true
 		}
 	})
-	// don't move if all options have been filtered out
+	// не двигаться, если все параметры были отфильтрованы
 	if (aCurrentOptions.length === 0) {
 		return
 	}
 	if (toThere === 'input') {
 		csInput.focus()
 	}
-	// possible start points
+	// возможные начальные точки
 	switch(fromHere) {
 		case csInput:
 			if (toThere === 'forward') {
@@ -155,7 +151,7 @@ function moveFocus(fromHere, toThere) {
 				aCurrentOptions[aCurrentOptions.length - 2].focus()
 			}
 			break
-		default: // middle list or filtered items
+		default: // средний список или отфильтрованные элементы
 			const currentItem = findFocus()
 			const whichOne = aCurrentOptions.indexOf(currentItem)
 			if (toThere === 'forward') {
@@ -208,7 +204,6 @@ function setState(newState) {
 		case 'closed':
 			csState = 'closed'
 	}
-	// console.log({csState})
 }
 
 function doKeyAction(whichKey) {
@@ -216,38 +211,38 @@ function doKeyAction(whichKey) {
 	switch(whichKey) {
 		case 'Enter':
 			if (csState === 'initial') {
-				// if state = initial, toggleOpen and set state to opened
+				// если состояние = начальное, toggleOpen и установка состояния на открытое
 				toggleList('Open')
 				setState('opened')
 			} else if (csState === 'opened' && currentFocus.tagName === 'LI') {
-				// if state = opened and focus on list, makeChoice and set state to closed
+				// если состояние = открыто и фокус на списке, makeChoice и установите состояние закрыто
 				makeChoice(currentFocus)
 				toggleList('Shut')
 				setState('closed')
 			} else if (csState === 'opened' && currentFocus === csInput) {
-				// if state = opened and focus on input, close it
+				// если состояние = открыто и фокус на вводе, закрыть его
 				toggleList('Shut')
 				setState('closed')
 			} else if (csState === 'filtered' && currentFocus.tagName === 'LI') {
-				// if state = filtered and focus on list, makeChoice and set state to closed
+				// если состояние = отфильтровано и сфокусироваться на списке, makeChoice и установит закрытое состояние
 				makeChoice(currentFocus)
 				toggleList('Shut')
 				setState('closed')
 			} else if (csState === 'filtered' && currentFocus === csInput) {
-				// if state = filtered and focus on input, set state to opened
+				// если состояние = отфильтровано и фокус на вводе, установить состояние на открытое
 				toggleList('Open')
 				setState('opened')
-			} else { // i.e. csState is closed, or csState is opened/filtered but other focus point?
-				// if state = closed, set state to filtered? i.e. open but keep existing input?
+			} else {
+				// если состояние = закрыто, установить состояние как отфильтрованное? т.е. открыть, но сохранить существующий ввод
 				toggleList('Open')
 				setState('filtered')
 			}
 			break
 
 		case 'Escape':
-			// if state = initial, do nothing
-			// if state = opened or filtered, set state to initial
-			// if state = closed, do nothing
+			// если состояние = начальное, ничего не делать
+      // если состояние = открыто или отфильтровано, установить состояние начальное
+      // если состояние = закрыто, ничего не делать
 			if (csState === 'opened' || csState === 'filtered') {
 				toggleList('Shut')
 				setState('initial')
@@ -256,49 +251,49 @@ function doKeyAction(whichKey) {
 
 		case 'ArrowDown':
 			if (csState === 'initial' || csState === 'closed') {
-				// if state = initial or closed, set state to opened and moveFocus to first
+				// если состояние = начальное или закрытое, устанавливаем состояние на открытое и перемещаем фокус на первое
 				toggleList('Open')
 				moveFocus(csInput, 'forward')
 				setState('opened')
 			} else {
-				// if state = opened and focus on input, moveFocus to first
-				// if state = opened and focus on list, moveFocus to next/first
-				// if state = filtered and focus on input, moveFocus to first
-				// if state = filtered and focus on list, moveFocus to next/first
+				// если состояние = открыто и фокус на вводе, перемещаем фокус на первое
+        // если состояние = открыто и фокус на списке, переместить фокус на следующий / первый
+        // если состояние = отфильтровано и фокус на вводе, перемещаем фокус на первое
+        // если состояние = отфильтровано и фокус на списке, переместить фокус на следующий / первый
 				toggleList('Open')
 				moveFocus(currentFocus, 'forward')
 			}
 			break
 		case 'ArrowUp':
 			if (csState === 'initial' || csState === 'closed') {
-				// if state = initial, set state to opened and moveFocus to last
-				// if state = closed, set state to opened and moveFocus to last
+        // если состояние = начальное, устанавливаем состояние на открытое и перемещаем фокус на последнее
+        // если state = closed, устанавливаем состояние открытое и перемещаем фокус на последнее
 				toggleList('Open')
 				moveFocus(csInput, 'back')
 				setState('opened')
 			} else {
-				// if state = opened and focus on input, moveFocus to last
-				// if state = opened and focus on list, moveFocus to prev/last
-				// if state = filtered and focus on input, moveFocus to last
-				// if state = filtered and focus on list, moveFocus to prev/last
+        // если состояние = открыто и фокус на вводе, перемещаем фокус на последнее
+        // если состояние = открыто и фокус на списке, переместить фокус на предыдущий / последний
+        // если состояние = отфильтровано и фокус на вводе, перемещаем фокус на последнее
+        // если состояние = отфильтровано и фокус на списке, переместить фокус на предыдущий / последний
 				moveFocus(currentFocus, 'back')
 			}
 			break
 		default:
 			if (csState === 'initial') {
-				// if state = initial, toggle open, doFilter and set state to filtered
+				// если state = initial, переключить open, doFilter и установить состояние на отфильтрованный
 				toggleList('Open')
 				doFilter()
 				setState('filtered')
 			} else if (csState === 'opened') {
-				// if state = opened, doFilter and set state to filtered
+				// если состояние = открыто, doFilter и установите состояние как отфильтрованное
 				doFilter()
 				setState('filtered')
 			} else if (csState === 'closed') {
-				// if state = closed, doFilter and set state to filtered
+				// если state = closed, doFilter и установим состояние отфильтровано
 				doFilter()
 				setState('filtered')
-			} else { // already filtered
+			} else { // уже отфильтровано
 				doFilter()
 			}
 			break

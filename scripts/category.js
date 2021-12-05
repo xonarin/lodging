@@ -1,6 +1,6 @@
 "use strict";
 
-const selectCategories = document.querySelectorAll(".form__radio-button");
+const selectCategories = document.querySelectorAll(".form__input_type_radio-custom");
 const nextButton = document.querySelector(".form__button_type_next");
 const backButton = document.querySelector(".form__button_type_back");
 const form = document.querySelector(".form");

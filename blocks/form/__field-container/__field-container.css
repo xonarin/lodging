@@ -1,3 +1,5 @@
 .form__field-container {
   grid-area: field;
+  padding: 12px 0 0 0;
+  width: 100%;
 }

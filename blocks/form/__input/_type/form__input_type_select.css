@@ -1,0 +1,8 @@
+.form__input_type_select {
+  background: url('../../../../images/select.svg') no-repeat right;
+  background-position-x: calc(100% - 29px);
+  appearance: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #96949E;
+}

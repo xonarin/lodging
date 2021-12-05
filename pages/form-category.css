@@ -30,15 +30,14 @@
 
 @import url("../blocks/form/__field-container/__field-container.css");
 @import url("../blocks/form/__field/form__field.css");
+@import url("../blocks/form/__field/_buttons/form__field_buttons.css");
+@import url("../blocks/form/__field/_buttons/form__field_buttons-category.css");
 
 @import url("../blocks/form/__label/form__label.css");
-@import url("../blocks/form/__label/_type/form__label_type_radio.css");
+@import url("../blocks/form/__label/_type/form__label_type_radio-custom.css");
 
-@import url("../blocks/form/__visual-input/form__visual-input.css");
-@import url("../blocks/form/__mark/form__mark.css");
-
-@import url("../blocks/form/__radio-button/form__radio-button.css");
-@import url("../blocks/form/__buttons-wrap/form__buttons-wrap.css");
+@import url("../blocks/form/__input/form__input.css");
+@import url("../blocks/form/__input/_type/form__input_type_radio-custom.css");
 
 @import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__button/_type/form__button_type_back.css");

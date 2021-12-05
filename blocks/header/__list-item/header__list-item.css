@@ -7,3 +7,9 @@
   opacity: 1;
   transition: opacity 0.3s linear, visibility 0s;
 }
+
+ /* @media screen and (max-width: 360px) {
+  .header__list-item {
+  margin: 0;
+  }
+}  */

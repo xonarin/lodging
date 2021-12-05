@@ -3,3 +3,9 @@
   height: 24px;
   margin-right: 8px;
 }
+
+@media screen and (max-width: 360px) {
+  .header__link-icon {
+    margin-right: 4px;
+  }
+}

@@ -1,7 +1,5 @@
 .landing__list-item {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
   font-family: "TT Firs Neue", Arial, sans-serif;
   font-size: 32px;
   line-height: 36px;
@@ -11,6 +9,11 @@
   min-height: 75px;
   padding: 18px 0;
   border-bottom: 1px solid #ebe9ed;
+
+  display: grid;
+  grid-template-columns: minmax(68px, 77px) minmax(252px, 306px) minmax(320px, 417px);
+  grid-template-areas: "order title description";
+  justify-content: space-between;
 }
 
 .landing__list-item::before {
@@ -18,4 +21,18 @@
   counter-increment: myCounter;
   display: inline-block;
   min-width: 20px;
+  grid-area: order;
+}
+
+@media screen and (max-width: 360px) {
+  .landing__list-item {
+    font-family: "TT Firs Neue", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-block-end: 20px;
+    grid-template-columns: 68px 252px;
+    grid-template-areas: "order title"
+    "description description";
+  }
 }

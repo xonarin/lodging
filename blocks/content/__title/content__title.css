@@ -7,3 +7,13 @@
   color: #3B3748;
   margin: 0 0 40px 0;
 }
+
+@media screen and (max-width: 360px) {
+  .content__title {
+    font-family: "TT Firs Neue", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 44px;
+    margin: 0 0 40px 0;
+  }
+}

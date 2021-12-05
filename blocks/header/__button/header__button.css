@@ -19,3 +19,9 @@
 .header__button:hover {
   background-color: #5100b8;
 }
+
+@media screen and (max-width: 360px) {
+  .header__button {
+display: none;
+  }
+}

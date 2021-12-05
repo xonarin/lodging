@@ -15,6 +15,8 @@
 @import url("../blocks/header/__list-item/header__list-item.css");
 @import url("../blocks/header/__navigation-town/header__navigation-town.css");
 @import url("../blocks/header/__content/header__content.css");
+@import url("../blocks/header/__link/_type/header__link_type_display.css");
+@import url("../blocks/header/__navigation-menu/header__navigation-menu.css");
 
 @import url("../blocks/content/content.css");
 @import url("../blocks/content/__container/content__container.css");

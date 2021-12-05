@@ -1,0 +1,9 @@
+.header__link_type_display {
+    display: none;
+}    
+
+@media screen and (max-width: 360px) {
+    .header__link_type_display {
+        display: flex;
+    }    
+}

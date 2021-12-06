@@ -7,7 +7,7 @@ const regExpPhone =
 const regExpDigits = /[A-Za-zА-Яа-яЁё]/;
 let errorImg;
 let errorMsg;
-let errorFlag = false;
+let errorFlag = true;
 
 function createErrorMsg(element, textError) {
   if (!element.style.marginBottom) {
@@ -49,24 +49,37 @@ castomeSelect.addEventListener("blur", () => {
   deleteError(castomeSelect);
 });
 
-phoneInput.addEventListener("change", (event) => {
+phoneInput.addEventListener("change", () => {
   if (phoneInput.value.match(regExpDigits)) {
     phoneInput.value = "+7(";
   } else if (!phoneInput.value.match(regExpPhone)) {
-    if (!errorFlag) {
+    if (errorFlag) {
       deleteError(phoneInput);
       createErrorMsg(
         phoneInput,
         "введите номер телефона в формате +7(xxx)xxx-xx-xx"
       );
-      errorFlag = true;
+      errorFlag = false;
+      if (
+        !phoneInput.hasAttribute("pattern") &&
+        !phoneInput.hasAttribute("minLength")
+      ) {
+        phoneInput.setAttribute("pattern", "/[0-9+-()]/{11,16}");
+        phoneInput.setAttribute("minlength", "16");
+      }
     }
   } else {
     phoneInput.value = phoneInput.value.replace(regExpPhone, "+7($2)$3-$4-$5");
     phoneInput.style = undefined;
-    deleteError(phoneInput);
-    errorFlag = false;
-    phoneInput.removeAttribute("minLength");
-    phoneInput.removeAttribute("pattern");
+    errorFlag = true;
+
+    if (phoneInput.hasAttribute("pattern")) {
+      deleteError(phoneInput);
+
+      phoneInput.removeAttribute("minLength");
+      phoneInput.removeAttribute("pattern");
+      errorImg = undefined;
+      errorMsg = undefined;
+    }
   }
 });

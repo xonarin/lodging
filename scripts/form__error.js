@@ -75,7 +75,6 @@ phoneInput.addEventListener("change", () => {
 
     if (phoneInput.hasAttribute("pattern")) {
       deleteError(phoneInput);
-
       phoneInput.removeAttribute("minLength");
       phoneInput.removeAttribute("pattern");
       errorImg = undefined;

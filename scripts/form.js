@@ -29,5 +29,6 @@ backButton.addEventListener("click", () => {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
+
   nextPage(Object.keys(categories), categories);
 });

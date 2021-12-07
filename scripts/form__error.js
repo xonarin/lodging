@@ -5,7 +5,6 @@ const phoneInput = document.querySelector("input[type=tel]");
 const regExpPhone =
   /(^\+7|8{1})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{2})[\s\+-:\(\)]*(\d{2})$/;
 const regExpDigits = /[A-Za-zА-Яа-яЁё]/;
-
 let errorFlag = false;
 
 function createErrorMsg(element, textError) {
@@ -26,20 +25,21 @@ function createErrorMsg(element, textError) {
 function deleteError(element) {
   element.style.borderColor = "";
   element.style.marginBottom = "";
-  errorFlag = false;
+
   element.nextSibling.remove();
 }
 
 inputs.forEach((input) => {
   input.addEventListener("invalid", (event) => {
-    console.log(event.target);
     if (!event.target.validity.valid) {
       createErrorMsg(input, "пожалуйста, заполните это поле");
     }
   });
   input.addEventListener("input", (event) => {
     if (event.target.validity.valid) {
-      if (errorFlag) deleteError(input);
+      if (event.target.style.marginBottom) {
+        deleteError(input);
+      }
     }
     if (!event.target.validity.valid) {
       createErrorMsg(input, "пожалуйста, заполните это поле");
@@ -58,6 +58,7 @@ phoneInput.addEventListener("change", () => {
     phoneInput.value = phoneInput.value.replace(regExpPhone, "+7($2)$3-$4-$5");
     if (errorFlag && phoneInput.validity.valid) {
       deleteError(phoneInput);
+      errorFlag = false;
     }
   }
 });

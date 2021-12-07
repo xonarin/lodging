@@ -8,6 +8,7 @@
   margin: 0 33px 0 11px;
   align-self: center;
   transition: opacity 0.2s linear;
+  white-space: nowrap;
 }
 
 .header__link:hover {

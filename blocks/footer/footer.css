@@ -7,11 +7,12 @@
 @media screen and (max-width: 767px) {
   .footer {
     padding: 0;
+    background: #FFD400;
   }
 }
 
 @media screen and (max-width: 360px) {
   .footer {
-    display: none;
+    background: #FFD400;
   }
 }

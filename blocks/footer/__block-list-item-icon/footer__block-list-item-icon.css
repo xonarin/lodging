@@ -4,8 +4,9 @@
   margin: 0 0 0 9px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
   .footer__block-list-item-icon {
-      
+      width: 18.33px;
+      height: 17.5px;
   }
 }

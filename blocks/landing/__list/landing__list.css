@@ -10,7 +10,7 @@
   line-height: 36px;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 767px) {
   .landing__list {
     margin-block-end: 0;
   }

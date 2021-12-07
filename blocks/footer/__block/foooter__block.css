@@ -3,7 +3,7 @@
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 427px;
+  max-width: 427px;
 }
 
 .footer__block:first-of-type {
@@ -18,12 +18,12 @@
 
 @media screen and (max-width: 767px) {
   .footer__block {
-    margin-bottom: 20px;
+    margin-bottom: 48px;
   }
 
   .footer__block:first-of-type {
     width: 310px;
-    margin: 0 0 20px 0;
+    margin: 0 0 48px 0;
   }
   
   .footer__block:last-of-type {

@@ -1,3 +1,9 @@
 .block-centering {
   margin: 0 auto;
 }
+
+/* @media screen and (max-width: 767px) {
+  .block-centering {
+    margin-block-end: 30px;
+  }
+} */

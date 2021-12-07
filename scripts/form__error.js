@@ -3,12 +3,11 @@ const castomeSelect = document.querySelector("#city");
 const errorTemplate = document.querySelector("#form__error").content;
 const phoneInput = document.querySelector("input[type=tel]");
 const regExpPhone =
-  /(^\+7|8{1})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{2})[\s\+-:\(\)]*(\d{2})$/;
-const regExpDigits = /[A-Za-zА-Яа-яЁё]/;
-let errorFlag = false;
+  /(^\+?[0-9]{1})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{2})[\s\+-:\(\)]*(\d{2})$/;
+const regExpDigits = /[A-Za-zА-Яа-яЁё]/g;
 
 function createErrorMsg(element, textError) {
-  if (!element.style.marginBottom) {
+  if (!element.nextSibling.err) {
     element.style.borderColor = "#f40934";
     element.style.marginBottom = "0";
     const errorElement = errorTemplate
@@ -17,16 +16,18 @@ function createErrorMsg(element, textError) {
     errorElement.querySelector(".form__error-img").src =
       "./images/form-error.svg";
     errorElement.querySelector(".form__error-text").textContent = textError;
-    errorFlag = true;
+
+    errorElement.err = true;
     element.after(errorElement);
   }
 }
 
 function deleteError(element) {
-  element.style.borderColor = "";
-  element.style.marginBottom = "";
-
-  element.nextSibling.remove();
+  if (element.nextSibling.err) {
+    element.style.borderColor = "";
+    element.style.marginBottom = "";
+    element.nextSibling.remove();
+  }
 }
 
 inputs.forEach((input) => {
@@ -37,28 +38,38 @@ inputs.forEach((input) => {
   });
   input.addEventListener("input", (event) => {
     if (event.target.validity.valid) {
-      if (event.target.style.marginBottom) {
+      if (event.target.nextSibling.err) {
         deleteError(input);
       }
     }
     if (!event.target.validity.valid) {
-      createErrorMsg(input, "пожалуйста, заполните это поле");
+      if (event.target.type !== "tel") {
+        createErrorMsg(input, "пожалуйста, заполните это поле");
+      }
     }
   });
 });
 
-castomeSelect.addEventListener("blur", () => {
+castomeSelect.addEventListener("blur", (e) => {
+  console.log(e.target);
   deleteError(castomeSelect);
 });
 
-phoneInput.addEventListener("change", () => {
+phoneInput.addEventListener("input", () => {
   if (phoneInput.value.match(regExpDigits)) {
-    phoneInput.value = "+7(";
+    phoneInput.value = phoneInput.value.replace(regExpDigits, "");
   } else {
     phoneInput.value = phoneInput.value.replace(regExpPhone, "+7($2)$3-$4-$5");
-    if (errorFlag && phoneInput.validity.valid) {
+    if (phoneInput.nextSibling.err && phoneInput.value.match(regExpPhone)) {
       deleteError(phoneInput);
-      errorFlag = false;
     }
+  }
+});
+phoneInput.addEventListener("change", (event) => {
+  if (!event.target.validity.valid) {
+    createErrorMsg(
+      phoneInput,
+      "введите номер телефона в формате +7(xxx)xxx-xx-xx"
+    );
   }
 });

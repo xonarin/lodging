@@ -32,6 +32,6 @@
   outline-color: #7100ff;
 }
 
-.form__input:invalid {
+ .form__input:invalid {
   outline-color: #f40934;
 }

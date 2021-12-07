@@ -1,5 +1,5 @@
 const inputs = document.querySelectorAll(".form__input");
-const castomeSelect = document.querySelector("#city");
+const castomeSelect = document.querySelector(".form__input_type_select");
 const errorTemplate = document.querySelector("#form__error").content;
 const phoneInput = document.querySelector("input[type=tel]");
 const regExpPhone =
@@ -50,9 +50,11 @@ inputs.forEach((input) => {
   });
 });
 
-castomeSelect.addEventListener("blur", (e) => {
-  deleteError(castomeSelect);
-});
+if (castomeSelect) {
+  castomeSelect.addEventListener("blur", (e) => {
+    deleteError(castomeSelect);
+  });
+}
 
 phoneInput.addEventListener("input", () => {
   if (phoneInput.value.match(regExpDigits)) {

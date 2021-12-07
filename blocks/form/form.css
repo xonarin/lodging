@@ -12,11 +12,12 @@
 
 @media screen and (max-width: 860px) {
   .form {
+    /* justify-items: center; */
     grid-template-areas:
-    "steps steps "
-    "information information "
-    "field field "
-    " btn btn";
-    justify-self: center;
+    "steps steps"
+    "information information"
+    "field field"
+    "btn btn";
+    column-gap: 0px;
   }
 }

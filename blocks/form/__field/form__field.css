@@ -5,3 +5,14 @@
   flex-direction: column;
   max-width: 531px;
 }
+
+@media screen and (max-width: 860px) {
+  .form__field {
+    justify-items: center;
+    grid-template-areas:
+    "steps steps "
+    "information information "
+    "field field "
+    " btn btn";
+  }
+}

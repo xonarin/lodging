@@ -26,13 +26,13 @@
 
 @media screen and (max-width: 850px) {
   .landing__list-item {
-    font-family: "TT Firs Neue", Arial, sans-serif;
     font-size: 24px;
-    font-weight: 500;
     line-height: 28px;
     margin-block-end: 20px;
-    grid-template-columns: 68px 252px;
+    /* grid-template-columns: 68px 252px; */
+    grid-template-columns: minmax(68px, 80px) minmax(252px, 1fr);
     grid-template-areas: "order title"
     "description description";
+    row-gap: 16px;
   }
 }

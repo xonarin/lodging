@@ -39,7 +39,7 @@ inputs.forEach((input) => {
   });
   input.addEventListener("input", (event) => {
     if (event.target.validity.valid) {
-      deleteError(input);
+      if (errorFlag) deleteError(input);
     }
     if (!event.target.validity.valid) {
       createErrorMsg(input, "пожалуйста, заполните это поле");

@@ -24,7 +24,7 @@
   grid-area: order;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 850px) {
   .landing__list-item {
     font-family: "TT Firs Neue", Arial, sans-serif;
     font-size: 24px;

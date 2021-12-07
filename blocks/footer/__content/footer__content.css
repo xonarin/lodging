@@ -7,3 +7,10 @@
   max-width: 1360px;
   min-width: 360px;
 }
+
+@media screen and (max-width: 767px) {
+  .footer__content {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+}

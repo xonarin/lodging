@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .footer {
     display: none;

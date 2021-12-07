@@ -21,14 +21,16 @@
   background-color: #5100b8;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 850px) {
   .landing__button {
-    width: 320px;
+    width: 100%;;
+    min-width: 320px;
     height: 44px;
     font-family: "TT Firs Neue", Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     margin-block-end: 20px;
+    align-self: center;
   }
 }

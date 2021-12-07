@@ -5,7 +5,7 @@
   height: 48px;
   border: none;
   background-color: #7100ff;
-  color: #fff;
+  color: #FCFAF7;
   border-radius: 26px;
   cursor: pointer;
   font-family: inherit;
@@ -20,7 +20,7 @@
   background-color: #5100b8;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 767px) {
   .header__button {
 display: none;
   }

@@ -10,6 +10,13 @@
   margin-block-end: 24px;
 }
 
+@media screen and (max-width: 850px) {
+  .landing__title {
+    font-family: "TT Firs Neue", Arial, sans-serif;
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .landing__title {
     font-family: "TT Firs Neue", Arial, sans-serif;

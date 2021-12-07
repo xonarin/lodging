@@ -51,7 +51,6 @@ inputs.forEach((input) => {
 });
 
 castomeSelect.addEventListener("blur", (e) => {
-  console.log(e.target);
   deleteError(castomeSelect);
 });
 

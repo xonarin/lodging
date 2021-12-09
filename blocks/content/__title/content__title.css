@@ -1,9 +1,0 @@
-.content__title {
-  font-family: var(--font-family-neue);
-  font-size: 96px;
-  font-weight: var(--font-weigth-medium);
-  line-height: 96px;
-  letter-spacing: -0.02em;
-  color: var(--black-gray);
-  margin: 0 0 40px 0;
-}

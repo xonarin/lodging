@@ -1,9 +1,0 @@
-.header__list-item {
-  position: relative;
-}
-
-.header__list-item:hover .header__list-submenu {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s linear, visibility 0s;
-}

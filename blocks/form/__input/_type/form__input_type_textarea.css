@@ -1,8 +1,0 @@
-.form__input_type_textarea {
-  height: 132px;
-  resize: none;
-}
-
-.form__input_type_textarea::-webkit-scrollbar {
-  display: none;
-}

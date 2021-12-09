@@ -1,9 +1,0 @@
-.footer__content {
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin: 0 auto;
-  max-width: 1360px;
-  min-width: 360px;
-}

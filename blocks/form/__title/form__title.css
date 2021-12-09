@@ -9,3 +9,9 @@
   margin-inline-start: auto;
   margin-block-end: 12px;
 }
+
+@media screen and (max-width: 767px) {
+  .form__title {
+    margin: 0 0 0 20px;
+  }
+}

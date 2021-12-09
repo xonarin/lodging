@@ -20,4 +20,10 @@
   border-color: #7100ff;
 }
 
-
+@media screen and (max-width: 767px) {
+  .form__label_type_radio-custom {
+    padding: 12px 20px;
+    min-width: 320px;
+    height: 44px;
+  }
+}

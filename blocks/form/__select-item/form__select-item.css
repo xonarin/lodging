@@ -15,7 +15,7 @@
 
 .form__select-item:active {
   color: #FFFFFF;
-  background: url('../../../../images/option-checked-click.svg') no-repeat right;
+  background: url('../../../images/option-checked-click.svg') no-repeat right;
   background-position-x: calc(100% - 24px);
   background-color: #7100FF;
 }

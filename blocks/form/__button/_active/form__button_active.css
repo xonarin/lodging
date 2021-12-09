@@ -1,10 +1,10 @@
 .form__button_active {
-  background-color: #7100ff;
+  background-color: var(--button-background-active-color);
   color: #fcfaf7;
   border: none;
 }
 
 .form__button_active:hover:enabled {
-  background-color: #5100b8;
-  color: #fff;
+  background-color: var(--button-background-hover-color);
+  color: var(--white-gray);
 }

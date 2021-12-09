@@ -1,9 +1,9 @@
 .landing__list-description {
   max-width: 417px;
-  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-family: var(--font-family-neue);
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
-  font-weight: 400;
-  color: #3b3748;
+  font-weight: var(--font-weigth-normal);
+  color: var(--black-gray);
 }

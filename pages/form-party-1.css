@@ -1,5 +1,6 @@
 @import url("../vendor/normalize.css");
 @import url("../vendor/fonts/fonts.css");
+@import url("../pages/variables.css");
 
 @import url("../blocks/header/header.css");
 @import url("../blocks/header/__links/header__links.css");
@@ -46,7 +47,7 @@
 
 @import url("../blocks/form/__select-container/form__select-container.css");
 @import url("../blocks/form/__input/_type/form__input_type_select.css");
-@import url("../blocks/form/__input/_type/form__input_type_select-hidden.css");
+@import url("../blocks/form/__select-aria-hidden/form__select-aria-hidden.css");
 @import url("../blocks/form/__select-list/form__select-list.css");
 @import url("../blocks/form/__select-item/form__select-item.css");
 @import url("../blocks/form/__select-item/_type/form__select-item_type_selected.css");

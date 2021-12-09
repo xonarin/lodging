@@ -1,9 +1,9 @@
 .landing__title {
-  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-family: var(--font-family-neue);
   font-size: 48px;
   font-style: normal;
-  font-weight: 500;
-  color: #3b3748;
+  font-weight: var(--font-weigth-medium);
+  color: var(--black-gray);
   line-height: 52px;
   letter-spacing: -0.01em;
   margin: 0;

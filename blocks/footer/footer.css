@@ -1,5 +1,5 @@
 .footer {
-  background-color: #ebe9ed;
+  background-color: var(--footer-background-color);
   padding: 80px 40px;
   box-sizing: border-box;
 }

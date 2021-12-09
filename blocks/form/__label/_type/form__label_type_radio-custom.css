@@ -1,5 +1,5 @@
 .form__label_type_radio-custom {
-  background-color: #fff;
+  background-color: var(--white-gray);
   width: 100%;
   max-width: 531px;
   height: 48px;
@@ -7,17 +7,18 @@
   box-sizing: border-box;
   border-radius: 24px;
   padding: 12px 24px;
-  color: #3b3748;
+  color: var(--black-gray);
   margin: 0 0 12px 0;
+  cursor: pointer;
 }
 
 .form__input_type_radio-custom:checked + .form__label_type_radio-custom {
-  background-color: #7100ff;
+  background-color: var(--radio-background-color);
   background-image: url("../../../../images/radio-custom-checked.svg");
   background-repeat: no-repeat;
   background-position: top 50% right 23.97px;
-  color: #fcfaf7;
-  border-color: #7100ff;
+  color: var(--radio-color);
+  border-color: var(--radio-border-active-color);
 }
 
 

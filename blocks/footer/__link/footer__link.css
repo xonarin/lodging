@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  color: #3b3748;
+  color: var(--black-gray);
   transition: opacity 0.2s linear;
 }
 

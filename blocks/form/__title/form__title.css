@@ -1,8 +1,8 @@
 .form__title {
-  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-family: var(--font-family-neue);
   font-size: 48px;
   line-height: 52px;
-  font-weight: 500;
+  font-weight: var(--font-weigth-medium);
   font-style: normal;
   letter-spacing: -0.01em;
   margin: 0;

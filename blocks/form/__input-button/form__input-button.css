@@ -8,10 +8,10 @@
   border-radius: 26px;
   position: relative;
   transition: opacity 0.2s linear;
-  font-family: "TT Firs Neue", Arial, sans-serif;
+  font-family: var(--font-family-neue);
   font-size: 18px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: var(--font-weigth-medium);
   font-style: normal;
   padding-inline-start: 24px;
   padding-block-start: 12px;

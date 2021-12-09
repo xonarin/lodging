@@ -1,0 +1,6 @@
+.landing {
+  max-width: 880px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 80px 0;
+}

@@ -1,0 +1,11 @@
+.landing__title {
+  font-family: var(--font-family-neue);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: var(--font-weigth-medium);
+  color: var(--black-gray);
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  margin: 0;
+  margin-block-end: 25px;
+}

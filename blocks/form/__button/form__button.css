@@ -1,0 +1,30 @@
+.form__button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid var(--button-border-color);
+  background: transparent;
+  color: black;
+  font-family: var(--font-family-neue);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: var(--font-weigth-medium);
+  font-style: normal;
+  width: 204px;
+  height: 48px;
+  border-radius: 26px;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
+}
+
+.form__button:hover:enabled {
+  color: var(--button-hover-color);
+  border-color: var(--button-border-hover-enabled-color);
+}
+
+.form__button:disabled {
+  background-color: var(--button-background-disabled-color);
+  border: none;
+  color: var(--button-disabled-color);
+  cursor: default;
+}

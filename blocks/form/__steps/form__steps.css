@@ -1,0 +1,11 @@
+.form__steps {
+  margin: 0;
+
+  font-family: var(--font-family-neue);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: var(--font-weigth-normal);
+  font-style: normal;
+  padding-block-end: 12px;
+  grid-area: steps;
+}

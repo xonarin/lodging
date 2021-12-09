@@ -1,0 +1,8 @@
+.form__input_type_textarea-invitation {
+  height: 96px;
+  resize: none;
+}
+
+.form__input_type_textarea-invitation::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.form__list {
+  font-family: var(--font-family-neue);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black-gray);
+  padding: 0;
+  padding-inline-start: 28px;
+  padding-inline-end: 20px;
+  margin: 0;
+  margin-block-start: 20px;
+}

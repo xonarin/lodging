@@ -1,3 +1,9 @@
 .block-centering {
   margin: 0 auto;
 }
+
+@media only screen  and (max-width: 960px) {
+  .block-centering {
+    margin: 0;
+  }
+}

@@ -1,9 +1,16 @@
 .header {
   width: 100%;
+  min-width: 320px;
   background-color: var(--header-background-color);
   font-family: var(--font-family-neue);
   padding: 20px 40px;
   box-sizing: border-box;
   box-shadow: 0px 4px 12px 0px rgba(59, 55, 72, 0.12);
   position: relative;
+}
+
+@media only screen  and (max-width: 960px) {
+  .header {
+    padding: 12px 20px;
+  }
 }

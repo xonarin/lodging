@@ -4,3 +4,10 @@
   margin: 0 40px 0 auto;
   font: inherit;
 }
+
+@media only screen  and (max-width: 960px) {
+  .landing__list-title {
+    margin: 0 0 16px 48px;
+    flex-basis: auto;
+  }
+}

@@ -16,6 +16,7 @@
 @import url("../blocks/header/__list-item/header__list-item.css");
 @import url("../blocks/header/__navigation-town/header__navigation-town.css");
 @import url("../blocks/header/__content/header__content.css");
+@import url("../blocks/header/__mobile-button/header__mobile-button.css");
 
 @import url("../blocks/content/content.css");
 @import url("../blocks/content/__container/content__container.css");
@@ -43,3 +44,5 @@
 @import url("../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css");
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__link/_mail/footer__link_mail.css");
+@import url("../blocks/footer/__image/footer__image.css");
+@import url("../blocks/footer/__button/footer__button.css");

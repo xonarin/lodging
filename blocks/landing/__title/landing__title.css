@@ -6,6 +6,14 @@
   color: var(--black-gray);
   line-height: 52px;
   letter-spacing: -0.01em;
-  margin: 0;
-  margin-block-end: 25px;
+  margin: 0 0 25px 0;
+}
+
+@media only screen  and (max-width: 960px) {
+  .landing__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 18px 0;
+    padding: 0 20px;
+  }
 }

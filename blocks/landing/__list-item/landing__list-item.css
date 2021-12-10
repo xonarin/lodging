@@ -9,8 +9,9 @@
   font-weight: var(--font-weigth-medium);
   color: var(--black-gray);
   min-height: 75px;
-  padding: 18px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #ebe9ed;
+  box-sizing: border-box;
 }
 
 .landing__list-item::before {
@@ -18,4 +19,19 @@
   counter-increment: myCounter;
   display: inline-block;
   min-width: 20px;
+}
+
+@media only screen  and (max-width: 960px) {
+  .landing__list-item {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 20px 20px;
+  }
+
+  .landing__list-item:first-of-type {
+    border-top: 1px solid #ebe9ed;
+  }
 }

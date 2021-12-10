@@ -1,0 +1,31 @@
+.footer__button {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .footer__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 44px;
+    font-family: var(--font-family-neue);
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: var(--font-weigth-medium);
+    padding: 0;
+    margin: 0;
+    background: var(--button-background-color);
+    color: #fcfaf7;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+
+  .footer__button:hover {
+    background-color: var(--button-background-hover-color);
+  }
+
+}

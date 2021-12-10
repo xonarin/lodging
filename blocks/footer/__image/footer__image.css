@@ -1,0 +1,10 @@
+.footer__image {
+  display: block;
+}
+
+@media only screen and (max-width: 1250px) {
+  .footer__image {
+    display: none;
+  }
+}
+

@@ -15,3 +15,19 @@
   width: 310px;
   margin: 0 0 0 40px;
 }
+
+@media only screen and (max-width: 1250px) {
+  .footer__block {
+    width: auto;
+  }
+
+  .footer__block:first-of-type {
+    margin: 0;
+    width: auto;
+  }
+
+  .footer__block:last-of-type {
+    margin: 0;
+    width: auto;
+  }
+}

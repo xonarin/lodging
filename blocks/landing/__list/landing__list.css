@@ -4,3 +4,9 @@
   margin: 0;
   margin-block-end: 30px;
 }
+
+@media only screen and (max-width: 960px) {
+  .landing__list {
+    margin-block-end: 0px;
+  }
+}

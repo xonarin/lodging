@@ -3,3 +3,9 @@
   width: 230px;
   margin-left: 55px;
 }
+
+@media only screen  and (max-width: 960px) {
+  .header__navigation-town {
+    display: none;
+  }
+}

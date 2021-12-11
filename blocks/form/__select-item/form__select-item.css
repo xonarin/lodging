@@ -1,9 +1,9 @@
 .form__select-item {
-  font-family: 'TT Firs Neue', Arial, sans-serif;
-  font-weight: 400;
+  font-family: var(--font-family-neue);
+  font-weight: var(--font-weigth-normal);
   font-size: 18px;
   line-height: 24px;
-  color: #3B3748;
+  color: var(--black-gray);
   padding: 12px 24px;
   cursor: pointer;
 }
@@ -15,7 +15,7 @@
 
 .form__select-item:active {
   color: #FFFFFF;
-  background: url('../../../../images/option-checked-click.svg') no-repeat right;
+  background: url('../../../images/option-checked-click.svg') no-repeat right;
   background-position-x: calc(100% - 24px);
   background-color: #7100FF;
 }

@@ -4,8 +4,8 @@
   background-position-x: calc(100% - 29px);
   appearance: none;
   cursor: pointer;
-  background-color: #fff;
-  color: #3b3748;
+  background-color: var(--white-gray);
+  color: var(--black-gray);
   margin: 0;
 }
 

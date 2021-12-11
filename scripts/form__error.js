@@ -13,8 +13,10 @@ function createErrorMsg(element, textError) {
     element.style.borderColor = "#f40934";
     element.style.outlineColor = "#f40934";
     element.style.marginBottom = "0";
-    if (customeSelect.nextElementSibling.err) {
-      selectContainer.style.marginBottom = "0";
+    if (customeSelect) {
+      if (customeSelect.nextElementSibling.err) {
+        selectContainer.style.marginBottom = "0";
+      }
     }
     const errorElement = errorTemplate
       .querySelector(".form__error-container")
@@ -31,8 +33,10 @@ function createErrorMsg(element, textError) {
 function deleteError(element) {
   if (element.nextSibling.err) {
     element.style = "";
-    if (selectContainer.style.marginBottom === "0px") {
-      selectContainer.style = "";
+    if (selectContainer) {
+      if (selectContainer.style.marginBottom === "0px") {
+        selectContainer.style = "";
+      }
     }
     element.nextSibling.remove();
   }

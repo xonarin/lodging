@@ -4,12 +4,12 @@
   max-width: 153px;
   height: 48px;
   border: none;
-  background-color: #7100ff;
-  color: #fff;
+  background-color: var(--button-background-color);
+  color: var(--white-gray);
   border-radius: 26px;
   cursor: pointer;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: var(--font-weigth-medium);
   font-size: 18px;
   line-height: 24px;
   align-self: center;
@@ -17,5 +17,5 @@
 }
 
 .header__button:hover {
-  background-color: #5100b8;
+  background-color: var(--button-background-hover-color);
 }

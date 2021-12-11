@@ -1,5 +1,5 @@
 .form__label_type_radio {
-  color: #3b3748;
+  color: var(--black-gray);
   display: flex;
   flex-flow: row;
   align-items: center;

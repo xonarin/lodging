@@ -1,15 +1,21 @@
 const inputs = document.querySelectorAll(".form__input");
-const castomeSelect = document.querySelector(".form__input_type_select");
+const customeSelect = document.querySelector(".form__input_type_select");
 const errorTemplate = document.querySelector("#form__error").content;
 const phoneInput = document.querySelector("input[type=tel]");
 const regExpPhone =
   /(^\+?[0-9]{1})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{3})[\s\+-:\(\)]*(\d{2})[\s\+-:\(\)]*(\d{2})$/;
-const regExpDigits = /[A-Za-zА-Яа-яЁё]/g;
+const regExpAphabet = /[A-Za-zА-Яа-яЁё]/g;
+const sities = document.querySelectorAll(".form__select-item");
+const selectContainer = document.querySelector(".form__select-container");
 
 function createErrorMsg(element, textError) {
   if (!element.nextSibling.err) {
     element.style.borderColor = "#f40934";
+    element.style.outlineColor = "#f40934";
     element.style.marginBottom = "0";
+    if (customeSelect.nextElementSibling.err) {
+      selectContainer.style.marginBottom = "0";
+    }
     const errorElement = errorTemplate
       .querySelector(".form__error-container")
       .cloneNode(true);
@@ -24,8 +30,10 @@ function createErrorMsg(element, textError) {
 
 function deleteError(element) {
   if (element.nextSibling.err) {
-    element.style.borderColor = "";
-    element.style.marginBottom = "";
+    element.style = "";
+    if (selectContainer.style.marginBottom === "0px") {
+      selectContainer.style = "";
+    }
     element.nextSibling.remove();
   }
 }
@@ -33,44 +41,54 @@ function deleteError(element) {
 inputs.forEach((input) => {
   input.addEventListener("invalid", (event) => {
     if (!event.target.validity.valid) {
-      createErrorMsg(input, "пожалуйста, заполните это поле");
+      if (event.target.placeholder === "выберите из списка") {
+        createErrorMsg(input, "пожалуйста, выберите город");
+        customeSelect.setCustomValidity("выберите город из списка");
+      } else if (event.target.type === "tel") {
+        createErrorMsg(
+          input,
+          "введите номер телефона в формате +7(xxx)xxx-xx-xx"
+        );
+      } else {
+        createErrorMsg(input, "пожалуйста, заполните это поле");
+      }
     }
   });
-  input.addEventListener("input", (event) => {
+
+  input.addEventListener("change", (event) => {
     if (event.target.validity.valid) {
       if (event.target.nextSibling.err) {
         deleteError(input);
       }
-    }
-    if (!event.target.validity.valid) {
+    } else {
       if (event.target.type !== "tel") {
         createErrorMsg(input, "пожалуйста, заполните это поле");
+      } else {
+        createErrorMsg(
+          input,
+          "введите номер телефона в формате +7(xxx)xxx-xx-xx"
+        );
       }
     }
   });
 });
 
-if (castomeSelect) {
-  castomeSelect.addEventListener("blur", (e) => {
-    deleteError(castomeSelect);
+sities.forEach((sity) => {
+  sity.addEventListener("click", () => {
+    if (sity.classList.contains("form__select-item_type_selected")) {
+      deleteError(customeSelect);
+      customeSelect.setCustomValidity("");
+    }
   });
-}
+});
 
 phoneInput.addEventListener("input", () => {
-  if (phoneInput.value.match(regExpDigits)) {
-    phoneInput.value = phoneInput.value.replace(regExpDigits, "");
+  if (phoneInput.value.match(regExpAphabet)) {
+    phoneInput.value = phoneInput.value.replace(regExpAphabet, "");
   } else {
     phoneInput.value = phoneInput.value.replace(regExpPhone, "+7($2)$3-$4-$5");
     if (phoneInput.nextSibling.err && phoneInput.value.match(regExpPhone)) {
       deleteError(phoneInput);
     }
-  }
-});
-phoneInput.addEventListener("change", (event) => {
-  if (!event.target.validity.valid) {
-    createErrorMsg(
-      phoneInput,
-      "введите номер телефона в формате +7(xxx)xxx-xx-xx"
-    );
   }
 });

@@ -6,3 +6,9 @@
   margin: 0 0 16px 0;
   padding: 12px 0;
 }
+
+@media only screen and (max-width: 960px) {
+  .form__label_type_radio {
+    margin: 0 0 6px 0;
+  }
+}

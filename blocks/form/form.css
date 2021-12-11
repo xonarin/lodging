@@ -1,11 +1,24 @@
 .form {
   display: grid;
   grid-template-areas:
-    "steps steps "
-    "information field "
-    " btn btn";
+    "steps steps"
+    "information field"
+    "btn btn";
   justify-items: start;
   grid-template-columns: minmax(min-content, 309px) minmax(min-content, 531px);
   max-width: 880px;
   column-gap: 40px;
+}
+
+@media only screen and (max-width: 960px) {
+  .form {
+    grid-template-areas:
+    "steps"
+    "information"
+    "field"
+    "btn";
+    grid-template-columns: minmax(280px, 920px);
+    column-gap: 0;
+    max-width: none;
+  }
 }

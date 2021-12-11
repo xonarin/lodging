@@ -8,75 +8,77 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
-        <a class="header__logo-link" href="#">
-          <img
-            alt="Главная"
-            class="header__logo"
-            src="./images/logo/logo.svg"
-          />
-        </a>
-        <div class="header__links">
-          <nav class="header__navigation-town">
-            <ul class="header__list">
-              <li class="header__list-item">
-                <a class="header__link" href="#">
-                  <img
-                    alt="локация"
-                    class="header__link-icon"
-                    src="./images/header/header-location.svg"
-                  />
-                  Санкт-Петербург
-                </a>
-                <ul class="header__list-submenu">
-                  <li>
-                    <a class="header__link header__link_type_submenu" href="#">
-                      Москва
-                    </a>
-                  </li>
-                  <li>
-                    <a class="header__link header__link_type_submenu" href="#">
-                      Нижний-Новгород
-                    </a>
-                  </li>
-                  <li>
-                    <a class="header__link header__link_type_submenu" href="#">
-                      Екатеринбург
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <nav class="header__navigation">
-            <ul class="header__list">
-              <li>
-                <a class="header__link" href="#">куда пойти</a>
-              </li>
-              <li>
-                <a class="header__link" href="./index.html">стать участником</a>
-              </li>
-              <li>
-                <a class="header__link" href="#">о фестивале</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="header__link" href="#">
-            <img
-              alt="сердце"
-              class="header__link-icon"
-              src="./images/header/header-heart.svg"
-            />
-            хочу пойти
-          </a>
-        </div>
-        <button type="button" class="header__button" name="header">поддержать</button>
+    <div class="header__content">
+      <a class="header__logo-link" href="#">
+        <img
+          alt="Главная"
+          class="header__logo"
+          src="./images/logo/logo.svg"
+        />
+      </a>
+      <div class="header__links">
+        <nav class="header__navigation-town">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a class="header__link" href="#">
+                <img
+                  alt="локация"
+                  class="header__link-icon"
+                  src="./images/header/header-location.svg"
+                />
+                Санкт-Петербург
+              </a>
+              <ul class="header__list-submenu">
+                <li>
+                  <a class="header__link header__link_type_submenu" href="#"
+                  >Москва</a
+                  >
+                </li>
+                <li>
+                  <a class="header__link header__link_type_submenu" href="#"
+                  >Нижний-Новгород</a
+                  >
+                </li>
+                <li>
+                  <a class="header__link header__link_type_submenu" href="#"
+                  >Екатеринбург</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li>
+              <a class="header__link" href="#">куда пойти</a>
+            </li>
+            <li>
+              <a class="header__link" href="./index.html">стать участником</a>
+            </li>
+            <li>
+              <a class="header__link" href="#">о фестивале</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__link" href="#"
+        ><img
+          alt="сердце"
+          class="header__link-icon"
+          src="./images/header/header-heart.svg"
+        />хочу пойти</a
+        >
       </div>
-    </header>
+      <button type="button" class="header__button" name="header">поддержать</button>
+      <button type="button" class="header__mobile-button">
+        <img src="./images/menu.svg" alt="Меню">
+      </button>
+    </div>
+  </header>
 
     <main class="content">
       <div class="content__container">
-        <h1 class="content__title">стать участником</h1>
+        <h1 class="content__title content__title_mobile">стать участником</h1>
         <section class="section-form">
           <form name="form-other-2" class="form">
             <p class="form__steps">шаг 3 из 4</p>
@@ -279,6 +281,14 @@
           </ul>
         </section>
       </div>
+      <fieldset class="form__field form__field_buttons form__field_buttons-footer">
+        <button type="button" class="form__button form__button_type_back">
+          назад
+        </button>
+        <button type="submit" class="form__button form__button_type_next" disabled>
+          продолжить
+        </button>
+      </fieldset>
     </footer>
 
     <template id="form__error">

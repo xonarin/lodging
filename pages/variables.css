@@ -7,6 +7,7 @@
   /*Цвета*/
   --yellow: #ffd400;
   --black: #000;
+  --white: #fff;
   --black-gray: #3b3748;
   --purple-gray: #7100ff;
   --purple-dark: #5100b8;
@@ -41,6 +42,7 @@
   /*Цвета инпутов */
 
   --input-color: var(--black-gray);
+  --input-background-color: var(--white);
   --input-placeholder-color: var(--dirty-gray);
   --input-border-color: var(--dirty-gray);
   --input-outline-focus-color: var(--purple-gray);

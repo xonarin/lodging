@@ -30,19 +30,19 @@
                 </a>
                 <ul class="header__list-submenu">
                   <li>
-                    <a class="header__link header__link_type_submenu" href="#">
-                      Москва
-                    </a>
+                    <a class="header__link header__link_type_submenu" href="#"
+                    >Москва</a
+                    >
                   </li>
                   <li>
-                    <a class="header__link header__link_type_submenu" href="#">
-                      Нижний-Новгород
-                    </a>
+                    <a class="header__link header__link_type_submenu" href="#"
+                    >Нижний-Новгород</a
+                    >
                   </li>
                   <li>
-                    <a class="header__link header__link_type_submenu" href="#">
-                      Екатеринбург
-                    </a>
+                    <a class="header__link header__link_type_submenu" href="#"
+                    >Екатеринбург</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -61,35 +61,37 @@
               </li>
             </ul>
           </nav>
-          <a class="header__link" href="#">
-            <img
-              alt="сердце"
-              class="header__link-icon"
-              src="./images/header/header-heart.svg"
-            />
-            хочу пойти
-          </a>
+          <a class="header__link" href="#"
+          ><img
+            alt="сердце"
+            class="header__link-icon"
+            src="./images/header/header-heart.svg"
+          />хочу пойти</a
+          >
         </div>
         <button type="button" class="header__button" name="header">поддержать</button>
+        <button type="button" class="header__mobile-button">
+          <img src="./images/menu.svg" alt="Меню">
+        </button>
       </div>
     </header>
 
     <main class="content">
       <div class="content__container">
-        <h1 class="content__title">стать участником</h1>
+        <h1 class="content__title content__title_mobile">стать участником</h1>
         <section class="section-form">
           <form class="form" name="form-lection-1">
             <p class="form__steps">шаг 2 из 4</p>
             <div class="form__information">
-              <h2 class="form__title form__title_place_form-other">
+              <h2 class="form__title">
                 заполните форму
               </h2>
-              <p class="form__paragraph form__paragraph_place_form-other">
+              <p class="form__paragraph">
                 Определитесь с типом мероприятия — лекция, консультация или
                 мастер-класс.
               </p>
-              <p class="form__paragraph form__paragraph_place_form-other">
-                Когда люди удут покупать билеты, вам будут приходить уведомления
+              <p class="form__paragraph">
+                Когда люди будут покупать билеты, вам будут приходить уведомления
                 на электронную почту
               </p>
             </div>
@@ -134,9 +136,9 @@
                   />
                   <span>оффлайн</span>
                 </label>
-
-                <div class="form__line"></div>
-
+              </fieldset>
+              <div class="form__line form__line_radio-mobile"></div>
+              <fieldset class="form__field">
                 <label class="form__label" for="city">город</label>
 
                 <div
@@ -356,6 +358,14 @@
           </ul>
         </section>
       </div>
+      <fieldset class="form__field form__field_buttons form__field_buttons-footer">
+        <button type="button" class="form__button form__button_type_back">
+          назад
+        </button>
+        <button type="submit" class="form__button form__button_type_next" disabled>
+          продолжить
+        </button>
+      </fieldset>
     </footer>
 
     <template id="form__error">

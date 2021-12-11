@@ -21,4 +21,18 @@
   border-color: var(--radio-border-active-color);
 }
 
+@media only screen and (max-width: 960px) {
+  .form__label_type_radio-custom  {
+    max-width: none;
+    height: 44px;
+    padding: 10px 16px;
+  }
+
+  .form__input_type_radio-custom:checked + .form__label_type_radio-custom {
+    background-size: 20px 20px;
+    background-position: top 50% right 18px;
+  }
+}
+
+
 

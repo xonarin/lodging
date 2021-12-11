@@ -32,6 +32,4 @@
   outline-color: var(--input-outline-focus-color);
 }
 
- .form__input:invalid {
-  outline-color: var(--input-outline-invalid-color);
-}
+

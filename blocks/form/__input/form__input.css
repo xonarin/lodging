@@ -17,15 +17,7 @@
   margin: 0 0 32px 0;
 }
 
-.form__input::-webkit-input-placeholder {
-  font-size: 18px;
-  font-family: var(--font-family-neue);
-  font-style: normal;
-  font-weight: var(--font-weigth-normal);
-  line-height: 24px;
-  color: var(--input-placeholder-color);
-}
-
+.form__input::-webkit-input-placeholder,
 .form__input::placeholder {
   font-size: 18px;
   font-family: var(--font-family-neue);

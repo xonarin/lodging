@@ -1,0 +1,29 @@
+.header__mobile-button {
+  display: none
+}
+
+@media only screen and (max-width: 1250px) {
+  .header__mobile-button {
+    margin: 0 0 0 32px;
+    border: none;
+    max-width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .header__mobile-button {
+    margin: 0 0 0 36px;
+  }
+}

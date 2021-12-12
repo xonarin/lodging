@@ -1,0 +1,11 @@
+.form__line {
+  height: 1px;
+  border-top: 1px solid #ebe9ed;
+  margin: 4px 0 20px 0;
+}
+
+@media only screen and (max-width: 960px) {
+  .form__line {
+    margin: 0 0 20px 0;
+  }
+}

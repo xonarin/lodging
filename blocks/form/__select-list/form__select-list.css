@@ -1,0 +1,13 @@
+.form__select-list {
+  width: 100%;
+  max-width: 531px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--white-gray);
+  -webkit-padding-before: 24px;
+  padding-block-start: 24px;
+  -webkit-box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
+  box-shadow: 0px 4px 12px rgba(59, 55, 72, 0.12);
+  border-radius: 24px;
+}

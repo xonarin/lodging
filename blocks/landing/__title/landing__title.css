@@ -1,0 +1,19 @@
+.landing__title {
+  font-family: var(--font-family-neue);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: var(--font-weigth-medium);
+  color: var(--black-gray);
+  line-height: 52px;
+  letter-spacing: -0.01em;
+  margin: 0 0 25px 0;
+}
+
+@media only screen and (max-width: 960px) {
+  .landing__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 18px 0;
+    padding: 0 20px;
+  }
+}

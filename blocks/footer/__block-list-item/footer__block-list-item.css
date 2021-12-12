@@ -1,0 +1,10 @@
+.footer__block-list-item {
+  margin: 0;
+  padding: 12px 0;
+  font-family: var(--font-family-neue);
+  font-style: normal;
+  font-weight: var(--font-weigth-medium);
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--black-gray);
+}

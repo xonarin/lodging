@@ -1,0 +1,47 @@
+.landing__list-item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-family: var(--font-family-neue);
+  font-size: 32px;
+  line-height: 36px;
+  font-style: normal;
+  font-weight: var(--font-weigth-medium);
+  color: var(--black-gray);
+  min-height: 75px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ebe9ed;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.landing__list-item::before {
+  content: counter(myCounter);
+  counter-increment: myCounter;
+  display: inline-block;
+  min-width: 20px;
+}
+
+@media only screen and (max-width: 960px) {
+  .landing__list-item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 20px 20px;
+  }
+
+  .landing__list-item:first-of-type {
+    border-top: 1px solid #ebe9ed;
+  }
+}

@@ -1,0 +1,13 @@
+.header__navigation-town {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 230px;
+  margin-left: 55px;
+}
+
+@media only screen and (max-width: 960px) {
+  .header__navigation-town {
+    display: none;
+  }
+}

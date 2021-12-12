@@ -1,0 +1,36 @@
+.header__link {
+  text-decoration: none;
+  font-weight: var(--font-weigth-medium);
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 33px 0 11px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.header__link:hover {
+  color: #5100B8;
+}
+
+.header__link:hover .header__link-icon path {
+  fill: #5100B8;
+}
+
+@media only screen and (max-width: 960px) {
+  .header__link {
+    margin: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

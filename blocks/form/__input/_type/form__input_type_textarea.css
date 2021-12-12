@@ -1,0 +1,14 @@
+.form__input_type_textarea {
+  height: 132px;
+  resize: none;
+}
+
+.form__input_type_textarea::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .form__input_type_textarea {
+    height: 100px;
+  }
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./TTFirsNeue-Regular/TT_Firs_Neue_Regular.eot?#iefix') format('embedded-opentype'),
+    url('./TTFirsNeue-Regular/TT_Firs_Neue_Regular.woff2') format('woff2'),
+    url('./TTFirsNeue-Regular/TT_Firs_Neue_Regular.woff') format('woff'),
+    url('./TTFirsNeue-Regular/TT_Firs_Neue_Regular.ttf') format('truetype'),
+    url('./TTFirsNeue-Regular/TT_Firs_Neue_Regular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./TTFirsNeue-Medium/TT_Firs_Neue_Medium.eot?#iefix') format('embedded-opentype'),
+    url('./TTFirsNeue-Medium/TT_Firs_Neue_Medium.woff2') format('woff2'),
+    url('./TTFirsNeue-Medium/TT_Firs_Neue_Medium.woff') format('woff'),
+    url('./TTFirsNeue-Medium/TT_Firs_Neue_Medium.ttf') format('truetype'),
+    url('./TTFirsNeue-Medium/TT_Firs_Neue_Medium.otf') format('otf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

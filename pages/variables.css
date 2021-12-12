@@ -1,0 +1,51 @@
+:root {
+  /*Шрифты - family, size, weight, style*/
+  --font-family-neue: 'TT Firs Neue', Arial, sans-serif;
+  --font-weigth-normal: 400;
+  --font-weigth-medium: 500;
+
+  /*Цвета*/
+  --yellow: #ffd400;
+  --black: #000;
+  --white: #fff;
+  --black-gray: #3b3748;
+  --purple-gray: #7100ff;
+  --purple-dark: #5100b8;
+  --light-gray: #ebe9ed;
+  --white-gray: #fcfaf7;
+  --dirty-gray: #96949E;
+  --error-red: #f40934;
+
+
+  /* Цвет заднего фона */
+  --header-background-color: var(--yellow);
+  --content-background-color: var(--white-gray);
+  --footer-background-color: var(--light-gray);
+  --footer-mobile-background-color: var(--white-gray);
+
+  /*Цвета кнопки, ховер, бордер, бакграунд*/
+  --button-hover-color: var(--purple-dark);
+  --button-disabled-color: var(--dirty-gray);
+  --button-background-color: var(--purple-gray);
+  --button-background-active-color: var(--purple-gray);
+  --button-background-hover-color: var(--purple-dark);
+  --button-background-disabled-color: var(--light-gray);
+  --button-border-color: var(--black-gray);
+  --button-border-hover-enabled-color: var(--purple-dark);
+
+  /*Цвета кастомной радио кнопки */
+  --radio-background-color: var(--purple-gray);
+  --radio-color: var(--white-gray);
+  --radio-border-color: var(--dirty-gray);
+  --radio-border-active-color: var(--purple-gray);
+
+  /*Цвета инпутов */
+
+  --input-color: var(--black-gray);
+  --input-background-color: var(--white);
+  --input-placeholder-color: var(--dirty-gray);
+  --input-border-color: var(--dirty-gray);
+  --input-outline-focus-color: var(--purple-gray);
+  --input-outline-invalid-color: var(--error-red);
+
+}

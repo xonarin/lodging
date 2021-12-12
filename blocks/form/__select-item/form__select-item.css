@@ -1,0 +1,21 @@
+.form__select-item {
+  font-family: var(--font-family-neue);
+  font-weight: var(--font-weigth-normal);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black-gray);
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.form__select-item:hover,
+.form__select-item:focus {
+  background-color: #EBE9ED;
+}
+
+.form__select-item:active {
+  color: #FFFFFF;
+  background: url('../../../images/option-checked-click.svg') no-repeat right;
+  background-position-x: calc(100% - 24px);
+  background-color: #7100FF;
+}

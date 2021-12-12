@@ -12,7 +12,11 @@
   font-weight: var(--font-weigth-medium);
   font-size: 18px;
   line-height: 24px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   align-self: center;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
@@ -20,7 +24,7 @@
   background-color: var(--button-background-hover-color);
 }
 
-@media only screen  and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .header__button {
     display: none;
   }

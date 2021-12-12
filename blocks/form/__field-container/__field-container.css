@@ -2,6 +2,7 @@
   grid-area: field;
   padding: 12px 0 0 0;
   width: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 

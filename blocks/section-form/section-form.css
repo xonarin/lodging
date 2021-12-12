@@ -1,6 +1,11 @@
 .section-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-padding-after: 80px;
   padding-block-end: 80px;
 }
 
@@ -9,5 +14,3 @@
     padding: 0;
   }
 }
-
-

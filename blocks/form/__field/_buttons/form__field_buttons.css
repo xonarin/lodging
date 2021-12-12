@@ -1,5 +1,10 @@
 .form__field_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
   flex-flow: row;
   padding: 8px 0 0 112px;
 }
@@ -9,11 +14,14 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: var(--footer-mobile-background-color);
+    -webkit-box-shadow: 0 -8px 32px 0 rgb(59 55 72 / 12%);
     box-shadow: 0 -8px 32px 0 rgb(59 55 72 / 12%);
     padding: 20px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 }
-

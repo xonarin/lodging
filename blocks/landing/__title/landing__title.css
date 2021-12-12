@@ -9,7 +9,7 @@
   margin: 0 0 25px 0;
 }
 
-@media only screen  and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .landing__title {
     font-size: 32px;
     line-height: 36px;

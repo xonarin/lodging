@@ -10,6 +10,8 @@
   border: none;
   background-image: url("../../../../images/radio.svg");
   background-size: cover;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   cursor: pointer;
 }
@@ -26,6 +28,7 @@
   .form__input_type_radio {
     width: 20px;
     height: 20px;
+    -webkit-margin-end: 6px;
     margin-inline-end: 6px;
   }
 }

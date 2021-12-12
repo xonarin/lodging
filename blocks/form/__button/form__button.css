@@ -1,6 +1,7 @@
 .form__button {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid var(--button-border-color);
   background: transparent;
@@ -13,6 +14,8 @@
   width: 204px;
   min-height: 48px;
   border-radius: 26px;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
   cursor: pointer;
 }

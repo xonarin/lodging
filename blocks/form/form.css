@@ -1,23 +1,32 @@
 .form {
+  display: -ms-grid;
   display: grid;
   grid-template-areas:
     "steps steps"
     "information field"
     "btn btn";
   justify-items: start;
+  -ms-grid-columns: minmax(-webkit-min-content, 309px) 40px minmax(-webkit-min-content, 531px);
+  -ms-grid-columns: minmax(min-content, 309px) 40px minmax(min-content, 531px);
+  grid-template-columns: minmax(-webkit-min-content, 309px) minmax(-webkit-min-content, 531px);
   grid-template-columns: minmax(min-content, 309px) minmax(min-content, 531px);
   max-width: 880px;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
   column-gap: 40px;
 }
 
 @media only screen and (max-width: 960px) {
   .form {
     grid-template-areas:
-    "steps"
-    "information"
-    "field"
-    "btn";
+      "steps"
+      "information"
+      "field"
+      "btn";
+    -ms-grid-columns: minmax(280px, 920px);
     grid-template-columns: minmax(280px, 920px);
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
     column-gap: 0;
     max-width: none;
   }

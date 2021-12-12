@@ -5,6 +5,7 @@
   line-height: 24px;
   font-weight: var(--font-weigth-normal);
   font-style: normal;
+  -webkit-padding-after: 12px;
   padding-block-end: 12px;
   grid-area: steps;
 }

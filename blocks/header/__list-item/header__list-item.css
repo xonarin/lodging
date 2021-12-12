@@ -5,5 +5,7 @@
 .header__list-item:hover .header__list-submenu {
   visibility: visible;
   opacity: 1;
+  -webkit-transition: opacity 0.3s linear, visibility 0s;
+  -o-transition: opacity 0.3s linear, visibility 0s;
   transition: opacity 0.3s linear, visibility 0s;
 }

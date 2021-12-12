@@ -6,7 +6,9 @@
   font-style: normal;
   letter-spacing: -0.01em;
   margin: 0;
+  -webkit-margin-start: auto;
   margin-inline-start: auto;
+  -webkit-margin-after: 12px;
   margin-block-end: 12px;
 }
 

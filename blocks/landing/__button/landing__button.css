@@ -13,6 +13,8 @@
   border: none;
   border-radius: 26px;
   cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 

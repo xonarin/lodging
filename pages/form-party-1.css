@@ -69,6 +69,7 @@
 @import url("../blocks/form/__error-img/form__error-img.css");
 
 @import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/_mobile/footer_mobile.css");
 @import url("../blocks/footer/__content/footer__content.css");
 @import url("../blocks/footer/__block/foooter__block.css");
 @import url("../blocks/footer/__block-title/footer__block-title.css");

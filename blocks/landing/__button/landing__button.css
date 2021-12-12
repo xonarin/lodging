@@ -6,7 +6,6 @@
   line-height: 24px;
   font-style: normal;
   font-weight: var(--font-weigth-medium);
-  align-self: flex-end;
   padding: 0;
   margin: 0;
   background: var(--button-background-color);
@@ -23,6 +22,7 @@
 
 @media only screen and (max-width: 960px) {
   .landing__button {
-    display: none;
+    width: 100%;
+    max-width: 320px;
   }
 }

@@ -32,9 +32,12 @@
 @import url("../blocks/landing/__list-title/landing__list-title.css");
 @import url("../blocks/landing/__list-description/landing__list-description.css");
 
+
+@import url("../blocks/landing/__button-container/landing__button-container.css");
 @import url("../blocks/landing/__button/landing__button.css");
 
 @import url("../blocks/footer/footer.css");
+@import url("../blocks/footer/_mobile/footer_mobile.css");
 @import url("../blocks/footer/__content/footer__content.css");
 @import url("../blocks/footer/__block/foooter__block.css");
 @import url("../blocks/footer/__block-title/footer__block-title.css");

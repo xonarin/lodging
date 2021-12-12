@@ -69,9 +69,9 @@
 @import url("../blocks/footer/__content/footer__content.css");
 @import url("../blocks/footer/__block/foooter__block.css");
 @import url("../blocks/footer/__block-title/footer__block-title.css");
-@import url("../blocks/footer/__block-social-list/footer__block-social-list.css");
+@import url("../blocks/footer/__block-list/footer__block-list.css");
 @import url("../blocks/footer/__block-list-item/footer__block-list-item.css");
-@import url("../blocks/footer/__block-social-item/footer__block-social-item.css");
+@import url("../blocks/footer/__block-list-item-social/footer__block-list-item-social.css");
 @import url("../blocks/footer/__block-social-icon/footer__block-social-icon.css");
 @import url("../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css");
 @import url("../blocks/footer/__link/footer__link.css");

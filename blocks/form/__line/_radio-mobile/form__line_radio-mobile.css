@@ -1,0 +1,5 @@
+@media only screen and (max-width: 960px) {
+  .form__line_radio-mobile {
+    margin-top: 16px;
+  }
+}

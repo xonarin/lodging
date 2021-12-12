@@ -1,8 +1,22 @@
 .form__label_type_radio {
   color: var(--black-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
   flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0 0 16px 0;
   padding: 12px 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 960px) {
+  .form__label_type_radio {
+    margin: 0 0 6px 0;
+  }
 }

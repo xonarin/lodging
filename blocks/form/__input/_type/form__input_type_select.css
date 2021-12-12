@@ -2,11 +2,18 @@
   position: relative;
   background: url('../../../../images/select.svg') no-repeat right;
   background-position-x: calc(100% - 29px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   cursor: pointer;
-  background-color: var(--white-gray);
+  background-color: var(--input-background-color);
   color: var(--black-gray);
   margin: 0;
 }
 
-
+@media only screen and (max-width: 960px) {
+  .form__input_type_select {
+    background: url("../../../../images/select-mobile.svg") no-repeat right;
+    background-position-x: calc(100% - 22px);
+  }
+}

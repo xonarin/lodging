@@ -2,5 +2,13 @@
   counter-reset: myCounter;
   padding: 0;
   margin: 0;
+  -webkit-margin-after: 30px;
   margin-block-end: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+  .landing__list {
+    -webkit-margin-after: 87px;
+    margin-block-end: 87px;
+  }
 }

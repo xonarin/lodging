@@ -5,8 +5,10 @@
   padding: 0 0 10px 35px;
   margin: 0;
   list-style: none;
-  background-color:var(--header-background-color);
+  background-color: var(--header-background-color);
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.3s linear, visibility 0s;
+  -o-transition: opacity 0.3s linear, visibility 0s;
   transition: opacity 0.3s linear, visibility 0s;
 }

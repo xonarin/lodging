@@ -7,7 +7,8 @@
   /*Цвета*/
   --yellow: #ffd400;
   --black: #000;
-  --black-gray: #3B3748;
+  --white: #fff;
+  --black-gray: #3b3748;
   --purple-gray: #7100ff;
   --purple-dark: #5100b8;
   --light-gray: #ebe9ed;
@@ -20,6 +21,7 @@
   --header-background-color: var(--yellow);
   --content-background-color: var(--white-gray);
   --footer-background-color: var(--light-gray);
+  --footer-mobile-background-color: var(--white-gray);
 
   /*Цвета кнопки, ховер, бордер, бакграунд*/
   --button-hover-color: var(--purple-dark);
@@ -40,6 +42,7 @@
   /*Цвета инпутов */
 
   --input-color: var(--black-gray);
+  --input-background-color: var(--white);
   --input-placeholder-color: var(--dirty-gray);
   --input-border-color: var(--dirty-gray);
   --input-outline-focus-color: var(--purple-gray);

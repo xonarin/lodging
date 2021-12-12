@@ -11,3 +11,7 @@
 .footer__link:hover {
   color: #5100B8;
 }
+
+.footer__link:hover .footer__block-list-item-icon path {
+  fill: #5100B8;
+}

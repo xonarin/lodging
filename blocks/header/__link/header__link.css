@@ -14,6 +14,10 @@
   color: #5100B8;
 }
 
+.header__link:hover .header__link-icon path {
+  fill: #5100B8;
+}
+
 @media only screen  and (max-width: 960px) {
   .header__link {
     margin: 0;

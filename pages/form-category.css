@@ -29,6 +29,7 @@
 @import url("../blocks/form/form.css");
 @import url("../blocks/form/__steps/form__steps.css");
 @import url("../blocks/form/__information/form__information.css");
+@import url("../blocks/form/__information/_categories/form__information_categories.css");
 @import url("../blocks/form/__title/form__title.css");
 
 @import url("../blocks/form/__field-container/__field-container.css");

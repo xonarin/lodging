@@ -58,7 +58,6 @@
 
 @import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__button/_type/form__button_type_back.css");
-@import url("../blocks/form/__button/_type/form__button_type_next.css");
 @import url("../blocks/form/__button/_active/form__button_active.css");
 
 @import url("../blocks/form/__error-container/form__error-container.css");

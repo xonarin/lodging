@@ -45,7 +45,6 @@
 @import url("../blocks/form/__field-container/__field-container.css");
 @import url("../blocks/form/__field-container/_no-padding/form__field-container_no-padding.css");
 @import url("../blocks/form/__field/_buttons/form__field_buttons.css");
-@import url("../blocks/form/__field/_buttons/form__field_buttons-footer.css");
 
 @import url("../blocks/form/__button/form__button.css");
 @import url("../blocks/form/__button/_type/form__button_type_next.css");
@@ -61,9 +60,11 @@
 @import url("../blocks/footer/__content/footer__content.css");
 @import url("../blocks/footer/__block/foooter__block.css");
 @import url("../blocks/footer/__block-title/footer__block-title.css");
-@import url("../blocks/footer/__block-list/footer__block-list.css");
+@import url("../blocks/footer/__block-social-list/footer__block-social-list.css");
 @import url("../blocks/footer/__block-list-item/footer__block-list-item.css");
-@import url("../blocks/footer/__block-list-item-social/footer__block-list-item-social.css");
+@import url("../blocks/footer/__block-social-item/footer__block-social-item.css");
+@import url("../blocks/footer/__block-social-icon/footer__block-social-icon.css");
 @import url("../blocks/footer/__block-list-item-icon/footer__block-list-item-icon.css");
 @import url("../blocks/footer/__link/footer__link.css");
 @import url("../blocks/footer/__link/_mail/footer__link_mail.css");
+@import url("../blocks/footer/__image/footer__image.css");

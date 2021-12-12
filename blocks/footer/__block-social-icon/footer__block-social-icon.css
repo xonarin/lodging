@@ -1,0 +1,8 @@
+.footer__block-social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__block-social-icon:hover path {
+  fill: #5100B8;
+}

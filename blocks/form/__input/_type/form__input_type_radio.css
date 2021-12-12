@@ -2,14 +2,16 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  margin-inline-end: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  cursor: pointer;
+  padding: 0;
+  margin: 0 10px 0 0;
+  border: none;
   background-image: url("../../../../images/radio.svg");
   background-size: cover;
   transition: opacity 0.2s linear;
+  cursor: pointer;
 }
 
 .form__input_type_radio:checked {
